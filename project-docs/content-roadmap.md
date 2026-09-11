@@ -228,17 +228,91 @@ Google Maps評価を併記する場合はスクレイピングして自前DBへ�
 
 詳細設計：`project-docs/gym-database-design.md`
 
+---
+
+## F. 競技ボルダー課題・トレンド分析
+
+### F1. 公式大会課題データベース
+World-level、World Championships、Continental Championships / Series等を対象に、公式大会映像から課題単位でデータ化する。
+
+### F2. 課題に必要な能力を多軸数値化
+0〜5等で以下を別々に採点する。
+- Finger / Grip Demand
+- Pulling Strength
+- Compression Strength
+- Contact Strength / Explosive Power
+- Body Tension / Core
+- Lower-body Power
+- Balance
+- Footwork
+- Mobility / Flexibility
+- Coordination
+- Technical Complexity
+- Power-Endurance
+
+フィジカルを保持力と完全に一体化せず、保持、引く力、コンプレッション、瞬発、体幹等に分ける。後から相関が強ければ統合指標も作れるようにする。
+
+### F3. コーディネーションを細分化
+- Upper-body coordination
+- Hand-foot coordination
+- Whole-body coordination
+- Run / Jump / Parkour
+- Redirect / Momentum control
+
+「コーディネーション課題」という一語で終わらせず、どの身体部位・運動連鎖が要求されるかを記録する。
+
+### F4. 壁とホールドを定量化
+- 壁角度
+- 実効角度
+- slab / vertical / overhang / roof
+- wall geometry
+- crimp / sloper / pinch / volume / macro / dual-texture等
+を保存する。
+
+### F5. 課題そのものと選手ベータを分離
+課題側には要求能力を保存し、選手側には実際に使ったムーブ、代替ベータ、成功・失敗、トライ数等を保存する。同じ課題でも身長・性別・選手スタイルでベータが変わることを前提にする。
+
+### F6. 年代トレンド分析
+年ごとに、
+- 平均壁角度
+- スラブ比率
+- 強傾斜比率
+- coordination score
+- grip demand
+- balance
+- body tension
+- dynamic move率
+- parkour系ムーブ率
+- トップ率 / フラッシュ率
+等を集計する。
+
+男女別、地域別、大会レベル別にも比較する。
+
+### F7. AI映像分析
+AIで一次分類し、重要大会・決勝課題を中心に人間監査する。
+- ai_confidence
+- reviewer_status
+- taxonomy_version
+を保存し、分類ルールが変わった場合に再分析できるようにする。
+
+### F8. 初期対象
+最初は直近5〜10シーズンのWorld-level Boulder Finalsを優先し、100〜300課題程度を高品質に整備する。その後Semifinal、Qualification、Continental Championshipsへ広げる。
+
+詳細設計：`project-docs/competition-boulder-trend-analysis.md`
+
 ## 優先順位
 
 1. クライマー体型・体重データベース
 2. クライミング怪我データベース
 3. 日本クライミングジム基礎データベース
-4. クライミング傷害の疫学レビュー
-5. 保持力・クリンプの力学
-6. A2/A4プーリー損傷
-7. 全国ジム地図・年次推移分析
-8. 肩・肘・足首等の部位別記事
-9. トレーニング科学シリーズ
-10. ジム口コミ・評価機能
+4. 競技ボルダー課題分類taxonomy・直近大会の試験データセット
+5. クライミング傷害の疫学レビュー
+6. 保持力・クリンプの力学
+7. A2/A4プーリー損傷
+8. 全国ジム地図・年次推移分析
+9. 競技ボルダー年代トレンド分析
+10. 肩・肘・足首等の部位別記事
+11. トレーニング科学シリーズ
+12. ジム口コミ・評価機能
 
-最終的には記事単体ではなく、基礎データを再利用して複数の記事・図表・比較ページ・地図を作れる構成を目指す。
+最終的には記事単体ではなく、基礎データを再利用して複数の記事・図表・比較ページ・地図・年代トレンド可視化を作れる構成を目指す。
