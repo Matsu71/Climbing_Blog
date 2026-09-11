@@ -1,6 +1,11 @@
+import {extraGymSources,extraGyms} from './gyms-extra.mjs';
 export const checkedAt='2026-09-11';
 const S=(id,title,url,publisher,kind,access,published=null)=>({id,title,url,publisher,kind,access,published,checked_at:checkedAt});
 export const sources=[
+...extraGymSources,
+S('rei-technique','Climbing Techniques and Moves','https://www.rei.com/learn/expert-advice/climbing-techniques.html','REI / Jay Parks','指導者による教材','該当する用語と動作の本文を確認'),
+S('rei-glossary','Rock Climbing Glossary','https://www.rei.com/learn/expert-advice/rock-climbing-glossary.html','REI','運営者の用語集','該当する定義を確認'),
+S('crimpd','Crimpd: climbing training application','https://www.crimpd.com/docs/','Crimpd','運営者公式','公開機能説明を確認。全アプリの実機比較ではない'),
 S('hang','Hangboard training in advanced climbers: A randomized controlled trial','https://www.nature.com/articles/s41598-021-92898-2','Mundry et al. / Scientific Reports','査読付き原著','前回本文確認・今回再取得は制限','2021-06-29'),
 S('body','The role of physique, strength and endurance in the achievements of elite climbers','https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182026','Ozimek et al. / PLOS ONE','査読付き原著','本文・方法・結果を確認','2017-08-03'),
 S('tape','To tape or not to tape: annular ligament (pulley) injuries in rock climbers—a systematic review','https://link.springer.com/article/10.1186/s13102-022-00539-6','Larsson et al. / BMC Sports Science, Medicine and Rehabilitation','系統的レビュー','本文・結果・限界を確認','2022-08-01'),
@@ -49,12 +54,26 @@ export const studies=[
 {id:'grade',title:'グレードは筋力の目盛りなのか。',year:2021,design:'統計モデリング・プレプリント',theme:'グレード',participants:'登攀履歴データ。人数は抄録確認の範囲では未登録',protocol:'Bradley–Terry型モデルを使った尺度の推定。',finding:'モデルから難易度の性質を考える研究。必要な指力の倍率とは別の量です。',limit:'抄録のみ確認。査読済みとして扱わず、普遍的な換算則に転用しません。',article:'what-grades-measure',sources:['grade-model']},
 {id:'fear',title:'怖さと疲労は、一緒に変わるのか。',year:2026,design:'実験・モデル解析・プレプリント',theme:'メンタル',participants:'クライマー19人',protocol:'リードとトップロープ中の筋活動などと恐怖の自己評価を分析。',finding:'疲労と恐怖の関連を報告。原因の方向は相関だけでは確定しません。',limit:'抄録のみ確認。個人の診断や安全判断には使えません。',article:'fear-and-fatigue',sources:['fear']}
 ];
-export const gyms=[
+const pumpGyms=[
 ['ogikubo','B-PUMP OGIKUBO','東京都','杉並区','東京都杉並区上荻1-10-12 荻窪東亜会館3F','荻窪駅',['ボルダー']],
 ['akiba','B-PUMP TOKYO','東京都','文京区','東京都文京区湯島1-1-8','秋葉原駅・御茶ノ水駅',['ボルダー']],
 ['yokohama','B-PUMP YOKOHAMA','神奈川県','横浜市','神奈川県横浜市西区平沼1-8-1','横浜駅・戸部駅',['ボルダー']],
 ['kawaguchi','PUMP1 KAWAGUCHI','埼玉県','川口市','埼玉県川口市元郷2-3-12','赤羽駅からバス案内あり',['ボルダー','リード']],
 ['kawasaki','PUMP2 KAWASAKI','神奈川県','川崎市','神奈川県川崎市多摩区中野島2-9-30','中野島駅',['ボルダー','リード']]
 ].map(([id,name,prefecture,municipality,address,access,disciplines])=>({id,name,prefecture,municipality,address,access,disciplines,sources:['gym-'+id],checked_at:checkedAt,price_yen:null,wall_area_m2:null,floor_area_m2:null,opened_date:null,closed_date:null,moonboard:null,kilterboard:null,rating:null}));
+
+export const gyms=[...pumpGyms,...extraGyms].map(g=>{
+  const row={brand:'PUMP',status:'listed',summary:'公式情報を起点に、種目とアクセスを確認。',
+    checked_at:checkedAt,price_yen:null,wall_area_m2:null,floor_area_m2:null,
+    opened_date:null,opened_date_precision:'unknown',closed_date:null,closed_date_precision:'unknown',
+    boulder_height_m:null,rope_height_m:null,route_length_note:null,auto_belay:null,
+    moonboard:null,kilterboard:null,campus_board:null,rating:null,...g};
+  row.field_sources={...Object.fromEntries(['name','prefecture','municipality','address','access','disciplines','status'].map(k=>[k,[g.sources[0]]])),...g.field_sources};
+  for(const field of ['boulder_height_m','rope_height_m','closed_date','route_length_note','auto_belay','campus_board']) {
+    if(row[field]!==null && row[field]!==undefined && !row.field_sources[field]) row.field_sources[field]=[field==='campus_board'&&row.id==='basecamp-iruma'?'gym-base-facilities':g.sources[0]];
+  }
+  return row;
+});
+
 export const taxonomy=[['grip','指の保持'],['pull','引く力'],['compression','コンプレッション'],['contact','接触・瞬発'],['tension','体幹・テンション'],['legs','下半身パワー'],['balance','バランス'],['feet','足の精度'],['mobility','可動域'],['coord-upper','上半身連携'],['coord-hand-foot','手足連携'],['coord-whole','全身連携'],['coord-run','走る・跳ぶ'],['coord-redirect','勢いの方向転換'],['complexity','技術的複雑性'],['endurance','パワー持久力']].map(([id,name])=>({id,name}));
-export const competitors=[['8a','ログとコミュニティ','記録数で競う前に、日付・グレード意見・出典を分離する。'],['99','読みやすい高難度一覧','歴史資料と現在の記録を分け、解説や比較へつなげる。'],['lattice','測定と個別コーチング','条件と研究の限界を読める教材を作る。個別指導の代替ではない。'],['horst','技術・身体・メンタルの教材','日本語の読みやすさと、操作できる力学教材を接続する。'],['beta','研究テーマ別の文献索引','対象・デザイン・結果・限界を同じ位置で比較する。'],['climbers','国内のニュース・競技・特集','速報の量ではなく、長く使える知識と再利用できるデータを作る。'],['satellite','ジム課題・ログ・動画','訪問の前後に学びをつなげる。課題ログ機能を上回ったとは主張しない。']].map(([source,strength,approach])=>({source,strength,approach}));
+export const competitors=[['crimpd','ワークアウト・タイマー・ログ・振り返り','ログから何を学ぶかを日本語の解説につなぐ。トレーニングの網羅性や個別最適化を同等とは主張しない。'],['8a','ログとコミュニティ','記録数で競う前に、日付・グレード意見・出典を分離する。'],['99','読みやすい高難度一覧','歴史資料と現在の記録を分け、解説や比較へつなげる。'],['lattice','測定と個別コーチング','条件と研究の限界を読める教材を作る。個別指導の代替ではない。'],['horst','技術・身体・メンタルの教材','日本語の読みやすさと、操作できる力学教材を接続する。'],['beta','研究テーマ別の文献索引','対象・デザイン・結果・限界を同じ位置で比較する。'],['climbers','国内のニュース・競技・特集','速報の量ではなく、長く使える知識と再利用できるデータを作る。'],['satellite','ジム課題・ログ・動画','訪問の前後に学びをつなげる。課題ログ機能を上回ったとは主張しない。']].map(([source,strength,approach])=>({source,strength,approach}));
