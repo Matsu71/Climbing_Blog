@@ -2,7 +2,7 @@ name: Integrate verified source edits
 on:
   push:
     branches: ['improve/climber-knowledge-20260911']
-    paths: ['.integration/edit-bundle.json', '.github/workflows/integrate.yml']
+    paths: ['.integration/**', '.github/workflows/integrate.yml']
 permissions:
   contents: write
 concurrency:
@@ -27,7 +27,19 @@ jobs:
           from pathlib import Path, PurePosixPath
           import json, hashlib
           root = Path.cwd()
-          bundle = json.loads(Path('.integration/edit-bundle.json').read_text())
+          manifest = '.integration/edit-bundle.json'
+          bundle = json.loads(Path(manifest).read_text())
+          transports = [manifest]
+          parts = bundle.get('parts', [])
+          if len(parts) > 16:
+              raise ValueError('Too many edit parts')
+          for name in parts:
+              p = PurePosixPath(name)
+              target = root / name
+              if p.parent != PurePosixPath('.integration') or p.suffix != '.json' or name in transports or target.is_symlink() or target.stat().st_size > 100000:
+                  raise ValueError('Invalid edit part: ' + name)
+              bundle['edits'].append(json.loads(target.read_text()))
+              transports.append(name)
           staged = {}
           allowed = {'src', 'public', 'data', 'scripts', 'tests', 'project-docs'}
           for entry in bundle.get('edits', []) + bundle.get('files', []):
@@ -61,6 +73,7 @@ jobs:
               target.parent.mkdir(parents=True, exist_ok=True)
               target.write_bytes(data)
           Path('artifacts/changed-files.json').write_text(json.dumps(list(staged)))
+          Path('artifacts/transport-files.json').write_text(json.dumps(transports))
           Path('artifacts/source-hashes.json').write_text(json.dumps({k:hashlib.sha256(v).hexdigest() for k,v in staged.items()}, indent=2))
           PY
           git diff --binary > artifacts/applied-source.diff
@@ -83,10 +96,11 @@ jobs:
           python - <<'PY'
           import json, subprocess
           names = json.load(open('artifacts/changed-files.json'))
+          transports = json.load(open('artifacts/transport-files.json'))
           subprocess.run(['git','add','--',*names],check=True)
+          subprocess.run(['git','rm','--',*transports],check=True)
           PY
-          git rm .integration/edit-bundle.json
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Integrate source edits after passing unit, link and Chromium checks'
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Integrate discovery, gym comparison and private notebook after passing all checks'
           git push origin HEAD:refs/heads/improve/climber-knowledge-20260911
           git rev-parse HEAD > artifacts/commit.txt
           git archive --format=zip HEAD -o artifacts/source.zip
