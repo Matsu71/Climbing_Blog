@@ -1,0 +1,15 @@
+import {readdir,readFile,stat,writeFile} from 'node:fs/promises';
+import {resolve,relative,dirname,join} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url)),dist=resolve(root,'dist');
+async function walk(dir){const list=[];for(const e of await readdir(dir,{withFileTypes:true})){const path=join(dir,e.name);if(e.isDirectory())list.push(...await walk(path));else list.push(path);}return list;}
+const files=(await walk(dist)).filter(p=>p.endsWith('.html'));
+const manifest=JSON.parse(await readFile(resolve(dist,'build-manifest.json'),'utf8'));
+const errors=[],cache=new Map();
+for(const file of files){const text=await readFile(file,'utf8');const ids=[...text.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);if(new Set(ids).size!==ids.length)errors.push(relative(dist,file)+': duplicate IDs');cache.set(file,{text,ids:new Set(ids)});if((text.match(/<h1(?:\s|>)/g)||[]).length!==1)errors.push(relative(dist,file)+': expected one h1');for(const tag of ['<title>','name="description"','name="viewport"','lang="ja"','rel="canonical"'])if(!text.includes(tag))errors.push(relative(dist,file)+': missing '+tag);if(/(?:undefined|\[object Object\])/.test(text))errors.push(relative(dist,file)+': unserialized value');const scripts=[...text.matchAll(/<script[^>]+type="application\/(?:ld\+json|json)"[^>]*>([\s\S]*?)<\/script>/g)];for(const m of scripts){try{JSON.parse(m[1]);}catch{errors.push(relative(dist,file)+': invalid JSON script');}}}
+let checkedLinks=0;
+for(const [file,{text}]of cache){const localPath=relative(dist,file).replaceAll('\\','/').replace(/index\.html$/,'');const pageURL=new URL(manifest.base+localPath,'https://audit.invalid');for(const m of text.matchAll(/\b(?:href|src)="([^"]+)"/g)){const raw=m[1].replaceAll('&amp;','&');let u;try{u=new URL(raw,pageURL);}catch{errors.push(relative(dist,file)+': invalid URL '+raw);continue;}if(u.origin!=='https://audit.invalid')continue;if(!u.pathname.startsWith(manifest.base)){errors.push(relative(dist,file)+': URL escapes deployment base '+raw);continue;}let path;try{path=decodeURIComponent(u.pathname.slice(manifest.base.length));}catch{errors.push(relative(dist,file)+': invalid encoded path '+raw);continue;}const candidate=resolve(dist,path);if(candidate!==dist&&!candidate.startsWith(dist+'/')){errors.push(relative(dist,file)+': traversal '+raw);continue;}let target=candidate;try{if((await stat(target)).isDirectory())target=resolve(target,'index.html');await stat(target);}catch{errors.push(relative(dist,file)+': missing target '+raw);continue;}checkedLinks++;if(u.hash&&target.endsWith('.html')){const fragment=decodeURIComponent(u.hash.slice(1));if(!cache.get(target)?.ids.has(fragment))errors.push(relative(dist,file)+': missing fragment '+raw);}}}
+const report={html_files:files.length,content_routes:manifest.pages,internal_links_checked:checkedLinks,errors};
+await writeFile(resolve(dist,'audit-report.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));
+if(errors.length)process.exitCode=1;
