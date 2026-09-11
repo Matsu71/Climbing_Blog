@@ -88,7 +88,8 @@ try:
             go('climbs/')
             for i in range(3):
                 page.locator('[data-compare]').nth(i).check()
-            page.locator('[data-compare]').nth(3).check()
+            page.locator('[data-compare]').nth(3).click()
+            expect(page.locator('[data-compare]').nth(3)).not_to_be_checked()
             assert page.locator('[data-compare]:checked').count() == 3
             expect(page.locator('[data-toast]')).to_contain_text('最大3件')
             assert page.locator('[data-comparison] tbody tr').count() == 8
@@ -246,7 +247,7 @@ try:
         run('article sources and medical review status remain visible', source_details)
         def privacy():
             go('privacy/')
-            page.evaluate('localStorage.setItem("other-app", "keep");localStorage.setItem("crux:v1:saved", "[\"footwork-load\"]")')
+            page.evaluate('localStorage.setItem("other-app", "keep");localStorage.setItem("crux:v1:saved", JSON.stringify(["footwork-load"]))')
             page.once('dialog', lambda dialog: dialog.accept())
             page.locator('[data-clear-storage]').click()
             assert page.evaluate('localStorage.getItem("crux:v1:saved")') is None
