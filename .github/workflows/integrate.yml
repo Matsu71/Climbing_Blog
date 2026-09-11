@@ -41,16 +41,27 @@ jobs:
               bundle['edits'].append(json.loads(target.read_text()))
               transports.append(name)
           staged = {}
+          amended = set()
           allowed = {'src', 'public', 'data', 'scripts', 'tests', 'project-docs'}
-          for entry in bundle.get('edits', []) + bundle.get('files', []):
+          entries = [(e, False) for e in bundle.get('edits', []) + bundle.get('files', [])]
+          entries += [(e, True) for e in bundle.get('amendments', [])]
+          for entry, amending in entries:
               name = entry['path']
               p = PurePosixPath(name)
               if p.is_absolute() or '..' in p.parts or not p.parts or (p.parts[0] not in allowed and name not in {'README.md', 'package.json', '.gitignore'}):
                   raise ValueError('Path not permitted: ' + name)
               target = root / name
-              if name in staged or target.is_symlink() or root not in target.resolve().parents:
-                  raise ValueError('Invalid or duplicate target: ' + name)
-              old = target.read_bytes() if target.exists() else None
+              if target.is_symlink() or root not in target.resolve().parents:
+                  raise ValueError('Invalid target: ' + name)
+              if amending:
+                  if name not in staged or name in amended:
+                      raise ValueError('Amendment needs a unique staged target: ' + name)
+                  amended.add(name)
+                  old = staged[name]
+              else:
+                  if name in staged:
+                      raise ValueError('Duplicate target: ' + name)
+                  old = target.read_bytes() if target.exists() else None
               actual = hashlib.sha256(old).hexdigest() if old is not None else None
               if actual != entry.get('before'):
                   raise ValueError('Source changed; refusing stale edit: ' + name)
