@@ -1,3 +1,4 @@
+import {researchArticles} from './research-articles.mjs';
 const A=(id,category,title,answer,sections,refs,tool=null,deep=null)=>({id,category,title,answer,sections:sections.map(([title,text])=>({title,text})),sources:refs,tool,deep,updated:'2026-09-11',review:'AI支援による編集・専門家監修なし'});
 export const articles=[
 A('footwork-load','力学','足に乗ると、なぜ指が楽になるのか。','指をもっと頑張らせる前に、足が受け持つ力と、身体を回そうとする力を見てみましょう。',[
@@ -104,15 +105,17 @@ A('reading-research','研究の読み方','クライミング研究を読む、�
 A('choose-gym','ジム・入門','ジムを選ぶとき、広さより先に揃える条件。','まず登りたい種目と移動のしやすさ。面積や料金を比べるなら、数値が何を含むかまで揃えます。',[
 ['ボルダーとリードを混ぜない','今回の施設一覧では、公式案内を基にボルダーとリードを別々の設備項目にしています。両方がある施設は、どちらの検索にも表示されます。'],
 ['大きい数字だけを比べない','施設全体の床面積、登れる壁面積、最大壁高は別の指標です。どの面積か確認できない数値を、そのまま「広さランキング」に流用しません。未登録のボード設備は「なし」とは扱いません。'],
-['訪問前に公式の変更を確認する','料金、臨時休業、セット替え、利用条件は変わります。このサイトの5施設は同一チェーンの試験収録で、全国の網羅やおすすめ順位ではありません。最新の営業案内は必ず公式ページで確認してください。']
+['訪問前に公式の変更を確認する','料金、臨時休業、セット替え、利用条件は変わります。このサイトは複数の運営元から選定した施設の部分収録で、全国の網羅やおすすめ順位ではありません。最新の営業案内は必ず公式ページで確認してください。']
 ],['gym-ogikubo','gym-akiba','gym-kawaguchi']),
 A('first-session','ジム・入門','初めてのボルダリングを、ちゃんと楽しむために。','最初はグレードより、施設のルールと周囲の動きを知ることから。登り終えたあとまで含めて、一つのトライです。',[
 ['初回案内を入口にする','利用条件、レンタル、登録や講習の有無は施設ごとに確認します。分からないことは、受付で初めてであることを伝えて質問できます。料金の古い転載だけで予定を決めないようにします。'],
 ['着地する場所まで見る','マットの上を移動する前に、周囲で登っている人を確認します。落ち方や降り方は、その施設の初回説明を受けてください。文章や動画だけで安全な着地を習得したとは扱わないことが大切です。'],
 ['次に読むなら、足の使い方','初日から指力の最大測定を目標にする必要はありません。余裕のある課題で足へ体重を移す感覚を観察し、気になったことをスタッフに聞いてみる入口にできます。']
-],['gym-akiba','equilibrium'])
+],['gym-akiba','equilibrium']),
+...researchArticles
 ];
 export const paths=[
+{title:'「効いた」の中身を読む',description:'保持力・完登成績・生理指標を、同じ効果だと思わない。',ids:['stronger-fingers-not-sends','read-training-change','blood-flow-not-performance']},
 {title:'指だけで頑張らない',description:'保持・足・重心をつなげて理解する。',ids:['footwork-load','sloper-friction','flagging-moment']},
 {title:'停滞を、次の問いへ',description:'測定からプロジェクトの振り返りへ。',ids:['hangboard-evidence','measure-finger-strength','strength-vs-endurance','projecting-notes']},
 {title:'痛みがあるときに読む',description:'自己診断ではなく、受診と根拠の入口。',ids:['finger-pain-first','taping-evidence','return-is-not-calendar']},

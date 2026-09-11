@@ -1,8 +1,9 @@
 import {extraGymSources,extraGyms} from './gyms-extra.mjs';
+import {researchSources,extraStudies,existingResearchMetadata} from './research-extra.mjs';
 export const checkedAt='2026-09-11';
 const S=(id,title,url,publisher,kind,access,published=null)=>({id,title,url,publisher,kind,access,published,checked_at:checkedAt});
 export const sources=[
-...extraGymSources,
+...extraGymSources,...researchSources,
 S('rei-technique','Climbing Techniques and Moves','https://www.rei.com/learn/expert-advice/climbing-techniques.html','REI / Jay Parks','指導者による教材','該当する用語と動作の本文を確認'),
 S('rei-glossary','Rock Climbing Glossary','https://www.rei.com/learn/expert-advice/rock-climbing-glossary.html','REI','運営者の用語集','該当する定義を確認'),
 S('crimpd','Crimpd: climbing training application','https://www.crimpd.com/docs/','Crimpd','運営者公式','公開機能説明を確認。全アプリの実機比較ではない'),
@@ -47,13 +48,14 @@ C('off-the-wagon-low','Off the Wagon Low','ボルダー','スイス','Val Bavona
 ];
 const names={'Nalle Hukkataival':'ナーレ・フッカタイヴァル','Daniel Woods':'ダニエル・ウッズ','Shawn Raboutou':'ショーン・ラバトゥ','Simon Lorenzi':'シモン・ロレンツィ','Aidan Roberts':'エイダン・ロバーツ','Adam Ondra':'アダム・オンドラ','Stefano Ghisolfi':'ステファノ・ギゾルフィ','Jakob Schubert':'ヤコブ・シューベルト','Ryuichi Murai':'村井隆一'};
 export const athletes=Object.entries(names).map(([name,kana])=>({id:name.toLowerCase().replaceAll(' ','-'),name,kana,climbs:climbs.filter(c=>c.first_ascent_by===name).map(c=>c.id),height_cm:null,mass_kg:null,ape_index_cm:null}));
-export const studies=[
+const legacyStudies=[
 {id:'hang',title:'ハングボードは、何を強くしたのか。',year:2021,design:'ランダム化比較試験',theme:'トレーニング',participants:'30人を割付、27人が完了',protocol:'成人中上級者。8週間、加重・エッジ縮小・通常の登攀を比較。',finding:'加重群で対照群より総合握力指標が改善。実際の完登グレードを測った研究ではありません。',limit:'小標本。介入2群の直接比較の検出力は不十分。万人に最善の方法を決める結果ではありません。',article:'hangboard-evidence',sources:['hang']},
 {id:'body',title:'トップ層の体型は、そのまま目標値になる？',year:2017,design:'横断的群間比較',theme:'身体・能力',participants:'男性20人（上位群6人、比較群14人）',protocol:'RP 8b–8cと7c+–8aを比較。体格・指力・持久力を測定。',finding:'上位群で指力と懸垂持久力が高い結果。減量や筋トレの介入効果を実験したものではありません。',limit:'高グレード男性の小標本。一般層・女性・競技ボルダー全体の基準にはできません。',article:'body-not-destiny',sources:['body']},
 {id:'tape',title:'テープの効果を、結果の種類ごとに読む。',year:2022,design:'系統的レビュー',theme:'怪我・回復',participants:'8研究＋1症例報告。206クライマーのほか非クライマー・献体研究',protocol:'テーピングと非テーピングを比較した異なる研究を整理。',finding:'腱の浮き上がりを抑える可能性には低〜中程度の確実性。',limit:'痛み・復帰期間・断裂予防の効果は確かではありません。力学的な変化は復帰許可を意味しません。',article:'taping-evidence',sources:['tape']},
 {id:'grade',title:'グレードは筋力の目盛りなのか。',year:2021,design:'統計モデリング・プレプリント',theme:'グレード',participants:'登攀履歴データ。人数は抄録確認の範囲では未登録',protocol:'Bradley–Terry型モデルを使った尺度の推定。',finding:'モデルから難易度の性質を考える研究。必要な指力の倍率とは別の量です。',limit:'抄録のみ確認。査読済みとして扱わず、普遍的な換算則に転用しません。',article:'what-grades-measure',sources:['grade-model']},
 {id:'fear',title:'怖さと疲労は、一緒に変わるのか。',year:2026,design:'実験・モデル解析・プレプリント',theme:'メンタル',participants:'クライマー19人',protocol:'リードとトップロープ中の筋活動などと恐怖の自己評価を分析。',finding:'疲労と恐怖の関連を報告。原因の方向は相関だけでは確定しません。',limit:'抄録のみ確認。個人の診断や安全判断には使えません。',article:'fear-and-fatigue',sources:['fear']}
 ];
+export const studies=[...legacyStudies.map(s=>({...s,...existingResearchMetadata[s.id],checked_at:checkedAt})),...extraStudies];
 const pumpGyms=[
 ['ogikubo','B-PUMP OGIKUBO','東京都','杉並区','東京都杉並区上荻1-10-12 荻窪東亜会館3F','荻窪駅',['ボルダー']],
 ['akiba','B-PUMP TOKYO','東京都','文京区','東京都文京区湯島1-1-8','秋葉原駅・御茶ノ水駅',['ボルダー']],

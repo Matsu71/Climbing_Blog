@@ -1,0 +1,73 @@
+name: Verify research integration
+on:
+  push:
+    branches: ['improve/research-evidence-20260911']
+    paths: ['.source-update/**', '.github/workflows/research-integration.yml']
+permissions:
+  contents: write
+concurrency:
+  group: crux-research-integration
+  cancel-in-progress: false
+jobs:
+  integrate:
+    if: github.repository == 'Matsu71/Climbing_Blog'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22'
+      - name: Integrate exact source edits with input and output checksums
+        run: |
+          mkdir -p artifacts
+          python .source-update/apply.py
+          python .source-update/fix-test.py
+          git diff --binary > artifacts/integration.diff
+      - name: Verify data, numerical models, static pages and all internal links
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run check 2>&1 | tee artifacts/node-checks.log
+          python -m unittest discover -s tests -p 'test_*.py' 2>&1 | tee artifacts/publishing-tests.log
+      - name: Install both browser engines
+        run: |
+          python -m pip install 'playwright==1.58.0'
+          python -m playwright install --with-deps chromium webkit
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Chromium interactions and mobile layout
+        shell: bash
+        run: |
+          set -o pipefail
+          python tests/browser_smoke.py 2>&1 | tee artifacts/browser-checks.log
+      - name: WebKit interactions and mobile layout
+        shell: bash
+        run: |
+          set -o pipefail
+          python tests/webkit_smoke.py 2>&1 | tee artifacts/webkit-checks.log
+      - name: Commit only tested source to the candidate branch without forcing
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          names=json.load(open('artifacts/integrated-files.json'))
+          subprocess.run(['git','add','--',*names],check=True)
+          PY
+          git rm .source-update/apply.py .source-update/fix-test.py
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Integrate research comparison and primary-paper explanations after both browser suites pass'
+          git push origin HEAD:refs/heads/improve/research-evidence-20260911
+          git rev-parse HEAD > artifacts/commit.txt
+          git archive --format=zip HEAD -o artifacts/source.zip
+      - name: Preserve verification evidence even after a failing test
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: crux-research-integration-${{ github.sha }}
+          path: |
+            artifacts/
+            dist/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error
