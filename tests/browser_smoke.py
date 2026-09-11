@@ -309,6 +309,8 @@ try:
             assert page.locator('[data-item]:visible').count() == 1
             assert '確かではありません' in page.locator('[data-item]:visible').inner_text()
         run('research anchor and theme filtering', research)
+        from research_browser import research_checks
+        research_checks(page,go,run,ROOT,OUT,'chromium')
         def calculations():
             go('tools/')
             expect(page.locator('#support [data-output]')).to_contain_text('294.2')
@@ -458,7 +460,7 @@ try:
             expect(pp.locator('[data-save]').first).to_be_hidden()
             pp.goto(BASE + 'read/', wait_until='load')
             expect(pp.locator('[data-filter]')).to_be_hidden()
-            assert pp.locator('[data-item]:visible').count() == 22
+            assert pp.locator('[data-item]:visible').count() == manifest['counts']['articles']
             pp.goto(BASE + 'quiz/', wait_until='load')
             assert pp.locator('.no-js-quiz details').count() == 12
             pp.goto(BASE+'glossary/',wait_until='load')
