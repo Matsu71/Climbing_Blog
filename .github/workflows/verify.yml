@@ -1,0 +1,112 @@
+name: Verify CRUX
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: crux-verify-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22'
+      - name: Preserve exact source snapshot
+        run: |
+          mkdir -p artifacts
+          git archive --format=zip HEAD -o artifacts/source.zip
+          git rev-parse HEAD > artifacts/commit.txt
+      - name: Unit tests, static build and internal-link audit
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run check 2>&1 | tee artifacts/node-checks.log
+          python -m unittest discover -s tests -p 'test_*.py' 2>&1 | tee artifacts/publishing-tests.log
+      - name: Install Chromium and WebKit verification tools
+        run: |
+          python -m pip install 'playwright==1.58.0'
+          python -m playwright install --with-deps chromium webkit
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Real Chromium interaction and mobile checks
+        shell: bash
+        run: |
+          set -o pipefail
+          python tests/browser_smoke.py 2>&1 | tee artifacts/browser-checks.log
+      - name: WebKit touch interaction and responsive checks
+        shell: bash
+        run: |
+          set -o pipefail
+          python tests/webkit_smoke.py 2>&1 | tee artifacts/webkit-checks.log
+      - name: Retain verification evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: crux-verification-${{ github.sha }}
+          path: |
+            artifacts/
+            dist/
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error
+      - name: Package the tested site for GitHub Pages
+        if: success() && github.repository == 'Matsu71/Climbing_Blog' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  pages_preflight:
+    name: Check publishing configuration
+    needs: verify
+    if: github.repository == 'Matsu71/Climbing_Blog' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      ready: ${{ steps.status.outputs.ready }}
+      state: ${{ steps.status.outputs.state }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Read publishing state without changing account settings
+        id: status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/pages_preflight.py
+      - name: Retain publication state separately from test results
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: crux-publishing-state-${{ github.sha }}
+          path: artifacts/deployment-status.json
+          retention-days: 14
+          if-no-files-found: warn
+  deploy:
+    name: Publish verified site
+    needs: [verify, pages_preflight]
+    if: needs.pages_preflight.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: crux-pages
+      cancel-in-progress: false
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the exact tested artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
