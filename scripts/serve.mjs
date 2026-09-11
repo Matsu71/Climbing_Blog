@@ -1,0 +1,11 @@
+import {createServer} from 'node:http';
+import {readFile,stat} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../dist/',import.meta.url));
+const manifest=JSON.parse(await readFile(resolve(root,'build-manifest.json'),'utf8'));
+const types={'.html':'text/html; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.csv':'text/csv; charset=utf-8','.svg':'image/svg+xml','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.png':'image/png'};
+const port=Number(process.env.PORT||4173);if(!Number.isInteger(port)||port<1||port>65535)throw new Error('Invalid PORT');
+const server=createServer(async(req,res)=>{const reply=(code,type,body)=>{res.writeHead(code,{'Content-Type':type,'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Cache-Control':'no-cache'});res.end(req.method==='HEAD'?undefined:body);};try{if(!['GET','HEAD'].includes(req.method)){reply(405,'text/plain','Method not allowed');return;}const u=new URL(req.url,'http://localhost');if(u.pathname==='/'&&manifest.base!=='/'){res.writeHead(302,{Location:manifest.base});res.end();return;}if(!u.pathname.startsWith(manifest.base)){reply(404,'text/html; charset=utf-8',await readFile(resolve(root,'404.html')));return;}const part=decodeURIComponent(u.pathname.slice(manifest.base.length));let path=resolve(root,part);if(path!==root.slice(0,-1)&&!path.startsWith(root)){reply(403,'text/plain','Forbidden');return;}if((await stat(path)).isDirectory()){if(!u.pathname.endsWith('/')){res.writeHead(308,{Location:u.pathname+'/'+u.search});res.end();return;}path=resolve(path,'index.html');}reply(200,types[extname(path)]||'application/octet-stream',await readFile(path));}catch(error){if(error instanceof URIError){reply(400,'text/plain','Invalid URL');return;}reply(404,'text/html; charset=utf-8',await readFile(resolve(root,'404.html')));}});
+server.listen(port,'127.0.0.1',()=>console.log(`CRUX preview http://127.0.0.1:${port}${manifest.base}`));
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>server.close(()=>process.exit(0)));
