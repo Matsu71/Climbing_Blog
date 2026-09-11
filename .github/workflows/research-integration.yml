@@ -24,6 +24,7 @@ jobs:
         run: |
           mkdir -p artifacts
           python .source-update/apply.py
+          python .source-update/fix-test.py
           git diff --binary > artifacts/integration.diff
       - name: Verify data, numerical models, static pages and all internal links
         shell: bash
@@ -54,7 +55,7 @@ jobs:
           names=json.load(open('artifacts/integrated-files.json'))
           subprocess.run(['git','add','--',*names],check=True)
           PY
-          git rm .source-update/apply.py
+          git rm .source-update/apply.py .source-update/fix-test.py
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Integrate research comparison and primary-paper explanations after both browser suites pass'
           git push origin HEAD:refs/heads/improve/research-evidence-20260911
           git rev-parse HEAD > artifacts/commit.txt
