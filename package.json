@@ -6,6 +6,7 @@
   "engines": {"node": ">=22"},
   "scripts": {
     "build": "node scripts/build.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
     "test": "node --test tests/*.test.mjs",
     "check": "npm test && npm run build && node scripts/audit.mjs",
     "serve": "node scripts/serve.mjs"
