@@ -8,6 +8,12 @@
 </head>
 <body>
   <noscript>このサイトの表示にはJavaScriptが必要です。</noscript>
-  <script type="module" src="/Climbing_Blog/bootstrap.mjs"></script>
+  <script type="module">
+    await import('/Climbing_Blog/bootstrap.mjs');
+    const compact=document.createElement('link');
+    compact.rel='stylesheet';
+    compact.href='/Climbing_Blog/compact.css';
+    document.head.appendChild(compact);
+  </script>
 </body>
 </html>
