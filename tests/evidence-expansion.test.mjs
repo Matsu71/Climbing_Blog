@@ -10,7 +10,7 @@ const by=(list,id)=>list.find(x=>x.id===id);
 test('third batch appends claims without rewriting either earlier batch',()=>{
  for(const key of ['sources','athletes','measurements','ascents','clinical'])assert.deepEqual(db[key].slice(0,initial[key].length+batch[key].length),[...initial[key],...batch[key]]);
  assert.deepEqual([expansion.sources.length,expansion.athletes.length,expansion.measurements.length,expansion.ascents.length,expansion.clinical.length],[14,8,12,23,4]);
- assert.equal(db.batch_id,expansion.id);assert.equal(db.collection_complete,false);
+ assert.ok(db.batches.some(b=>b.id===expansion.id));assert.equal(db.collection_complete,false);
 });
 test('six official profiles retain raw height and span without manufactured dates or weights',()=>{
  for(const [id,height,span] of [['tommy-caldwell',178,178],['melissa-le-neve',168,175],['kilian-fischhuber',175,176],['ryuichi-murai',167,173],['jenya-kazbekova',164,168],['solveig-korherr',154,156]]){
@@ -38,7 +38,7 @@ test('absolute ascent date and press release date stay separate',()=>{
 });
 test('clinical trial allocation is not reconstructed outcome denominator',()=>{
  for(const id of ['elbow-injection-rct','ankle-recurrence-rct']){
-  const c=by(db.clinical,id);assert.equal(c.allocation_counts.reduce((a,b)=>a+b,0),c.n_people);assert.equal(c.access,'抄録');assert.deepEqual(c.outcome_counts,[]);
+  const c=by(expansion.clinical,id);assert.equal(c.allocation_counts.reduce((a,b)=>a+b,0),c.n_people);assert.equal(c.access,'抄録');assert.deepEqual(c.outcome_counts,[]);
   for(const x of c.reported_statistics)assert.equal(x.denominator,null);
  }
  assert.equal(by(db.clinical,'elbow-injection-rct').effect_estimates[0].ci_level,99);
@@ -48,7 +48,7 @@ test('clinical trial allocation is not reconstructed outcome denominator',()=>{
 test('survey inconsistencies and expert counts cannot be presented as treatment success',()=>{
  const s=by(db.clinical,'climber-return-survey');assert.equal(s.n_people,237);assert.equal(s.n_injuries,432);assert.equal(s.region_counts[0].denominator,432);assert.ok(s.data_issues.length>=2);assert.deepEqual(s.outcome_counts,[]);
  const p=by(db.clinical,'ankle-paass');assert.equal(p.n_people,null);assert.equal(p.n_experts,155);assert.equal(p.role,'復帰評価');assert.deepEqual(p.outcome_counts,[]);
- assert.equal(evidenceCounts.clinicalStudies,10);assert.equal(evidenceCounts.clinicalConsensus,1);
+ assert.equal(evidenceCounts.clinicalStudies,12);assert.equal(evidenceCounts.clinicalConsensus,1);
 });
 test('applicability is explicit; climber-mixed studies are not relabeled climber-only',()=>{
  assert.equal(clinicalScope(by(db.clinical,'taping')),'クライマーを含む');assert.equal(clinicalScope(by(db.clinical,'lumbrical-series')),'クライマーを含む');
@@ -57,6 +57,6 @@ test('applicability is explicit; climber-mixed studies are not relabeled climber
 test('compact filters, exact climb links, grade history and medical scopes reach static output',()=>{
  const a=renderEvidence('ascent-data','/Climbing_Blog/');assert.match(a,/name="climb"/);assert.match(a,/class="filter-extra"/);assert.match(a,/data-grade-climb="Box Therapy"/);assert.match(a,/climb=Box%20Therapy&amp;discipline=/);
  const m=renderEvidence('injury-data','/');assert.match(m,/name="scope"/);assert.match(m,/data-purpose="再発予防"/);assert.match(m,/data-purpose="復帰評価"/);assert.match(m,/原文の不一致/);
- for(const html of [a,m])assert.match(html,/download-scope">全件/);
+ for(const html of [a,m])assert.match(html,/value="all">全件/);
  assert.match(readFileSync('scripts/build.mjs','utf8'),/'evidence-expansion'/);
 });

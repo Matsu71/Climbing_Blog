@@ -27,7 +27,7 @@ const paths=[];
 for(const [view,id]of routes){const path=view==='home'?'':view+'/'+(id?id+'/':'');const target=resolve(dist,path);await mkdir(target,{recursive:true});await writeFile(resolve(target,'index.html'),render(view,id,originURL.origin));paths.push(path);}
 await copyFile(resolve(dist,'404/index.html'),resolve(dist,'404.html'));
 await mkdir(resolve(dist,'data'),{recursive:true});
-for(const name of ['evidence','evidence-initial','evidence-additions','evidence-expansion'])await copyFile(resolve(root,'data/'+name+'.mjs'),resolve(dist,'data/'+name+'.mjs'));
+for(const name of ['evidence','evidence-initial','evidence-additions','evidence-expansion','evidence-followup','evidence-export'])await copyFile(resolve(root,'data/'+name+'.mjs'),resolve(dist,'data/'+name+'.mjs'));
 for(const [key,rows] of Object.entries({sources:evidence.sources,measurements:evidence.measurements,ascents:evidence.ascents,clinical:evidence.clinical})){
   await writeFile(resolve(dist,'data/evidence-'+key+'.json'),JSON.stringify(rows,null,2)+'\n');
   const keys=[...new Set(rows.flatMap(Object.keys))];
