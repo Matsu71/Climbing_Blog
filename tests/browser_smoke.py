@@ -52,11 +52,13 @@ try:
             return response
         def home():
             assert go().status == 200
-            expect(page.locator('h1')).to_have_text(re.compile('登るほど'))
+            expect(page.locator('h1')).to_have_text(re.compile('クライミングデータ'))
             assert page.locator('.desktop-nav').is_visible()
             assert page.locator('html').evaluate('(e)=>e.scrollWidth <= innerWidth+1')
             page.screenshot(path=str(OUT / 'desktop-home.png'), full_page=True)
         run('desktop home, navigation and screenshot', home)
+        from evidence_browser import evidence_checks
+        evidence_checks(page,go,run,ROOT,OUT)
         def search_kana():
             go('search/?q=' + urllib.parse.quote('すろーぱー'))
             expect(page.locator('[data-filter] [name=q]')).to_have_value('すろーぱー')

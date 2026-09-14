@@ -2,6 +2,8 @@ import {mkdir,rm,writeFile,readFile,copyFile,cp} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 import {render,configureBase,searchIndex} from '../src/render.mjs';
+import {evidence} from '../data/evidence.mjs';
+import {evidenceViews,evidenceCounts} from '../src/evidence-render.mjs';
 import {csv} from '../src/core.mjs';
 import {sources,climbs,athletes,studies,gyms,taxonomy,checkedAt} from '../data/catalog.mjs';
 import {researchMeasurements} from '../data/research-extra.mjs';
@@ -20,19 +22,26 @@ await cp(resolve(root,'public'),dist,{recursive:true});
 for(const name of ['core','gym-model','notebook-model','research-model','research-render'])await copyFile(resolve(root,'src/'+name+'.mjs'),resolve(dist,name+'.mjs'));
 const enhancements='\n/* Progressive enhancement visibility has higher specificity than component layout. */\nhtml:not(.js) .js-only{display:none!important}html.js .filters,html.js .view-controls,html.js .compare-pick{display:flex!important}html.js .grid.js-only{display:grid!important}html.js .save{display:inline-flex!important}html.js [hidden]{display:none!important}\n';
 await writeFile(resolve(dist,'styles.css'),await readFile(resolve(root,'public/styles.css'),'utf8')+enhancements);
-const routes=[['home',null],['read',null],...articles.map(a=>['read',a.id]),['climbs',null],...climbs.map(c=>['climbs',c.id]),['athletes',null],...athletes.map(a=>['athletes',a.id]),['research',null],...studies.map(s=>['research',s.id]),['gyms',null],...gyms.map(g=>['gyms',g.id]),...['glossary','notebook','gym-history','tools','quiz','search','saved','quality','data','privacy','404'].map(v=>[v,null])];
+const routes=[['home',null],...evidenceViews.map(v=>[v,null]),['read',null],...articles.map(a=>['read',a.id]),['climbs',null],...climbs.map(c=>['climbs',c.id]),['athletes',null],...athletes.map(a=>['athletes',a.id]),['research',null],...studies.map(s=>['research',s.id]),['gyms',null],...gyms.map(g=>['gyms',g.id]),...['glossary','notebook','gym-history','tools','quiz','search','saved','quality','data','privacy','404'].map(v=>[v,null])];
 const paths=[];
 for(const [view,id]of routes){const path=view==='home'?'':view+'/'+(id?id+'/':'');const target=resolve(dist,path);await mkdir(target,{recursive:true});await writeFile(resolve(target,'index.html'),render(view,id,originURL.origin));paths.push(path);}
 await copyFile(resolve(dist,'404/index.html'),resolve(dist,'404.html'));
 await mkdir(resolve(dist,'data'),{recursive:true});
+await copyFile(resolve(root,'data/evidence.mjs'),resolve(dist,'data/evidence.mjs'));
+for(const [key,rows] of Object.entries({sources:evidence.sources,measurements:evidence.measurements,ascents:evidence.ascents,clinical:evidence.clinical})){
+  await writeFile(resolve(dist,'data/evidence-'+key+'.json'),JSON.stringify(rows,null,2)+'\n');
+  const keys=[...new Set(rows.flatMap(Object.keys))];
+  await writeFile(resolve(dist,'data/evidence-'+key+'.csv'),csv(rows,keys));
+}
+await writeFile(resolve(dist,'data/evidence.json'),JSON.stringify(evidence,null,2)+'\n');
 await writeFile(resolve(dist,'data/research-measurements.json'),JSON.stringify(researchMeasurements,null,2)+'\n');
 await writeFile(resolve(dist,'data/research-measurements.csv'),csv(measurementRows(researchMeasurements),['study_id','source_id','source_locator','outcome','unit','group','n','phase','mean','standard_deviation']));
 for(const [name,data]of Object.entries({sources,climbs,athletes,studies,gyms,taxonomy,glossary,articles,quiz,search:searchIndex()}))await writeFile(resolve(dist,'data',name+'.json'),JSON.stringify(data,null,2)+'\n');
 for(const [name,data,fields]of [['climbs',climbs,['id','name','discipline','country','area','first_ascent_by','first_ascent_date','date_precision','grade_at_source','current_consensus','repeat_count','sources','checked_at']],['gyms',gyms,['id','name','prefecture','municipality','address','access','brand','status','disciplines','boulder_height_m','rope_height_m','auto_belay','campus_board','moonboard','kilterboard','closed_date','closed_date_precision','sources','checked_at']],['studies',studies,['id','title','year','design','theme','participants','protocol','finding','limit','access_level','sample_n','sample_stage','duration','performance_test','outcomes','not_measured','source_locator','sources']]])await writeFile(resolve(dist,'data',name+'.csv'),csv(data,fields));
 const indexed=paths.filter(p=>!['404/','search/','saved/'].includes(p));
-await writeFile(resolve(dist,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+indexed.map(p=>`<url><loc>${originURL.origin+base+p}</loc><lastmod>${checkedAt}</lastmod></url>`).join('')+'</urlset>\n');
+await writeFile(resolve(dist,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+indexed.map(p=>`<url><loc>${originURL.origin+base+p}</loc><lastmod>${['','athlete-data/','ascent-data/','injury-data/','evidence/'].includes(p)?evidence.retrieved_at:checkedAt}</lastmod></url>`).join('')+'</urlset>\n');
 await writeFile(resolve(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${originURL.origin+base}sitemap.xml\n`);
 await writeFile(resolve(dist,'.nojekyll'),'');
-await writeFile(resolve(dist,'build-manifest.json'),JSON.stringify({base,origin:originURL.origin,pages:routes.length,paths,counts:{articles:articles.length,climbs:climbs.length,athletes:athletes.length,studies:studies.length,gyms:gyms.length,glossary:glossary.length,sources:sources.length},editorial_date:checkedAt},null,2)+'\n');
+await writeFile(resolve(dist,'build-manifest.json'),JSON.stringify({base,origin:originURL.origin,pages:routes.length,paths,evidence_counts:evidenceCounts,evidence_date:evidence.retrieved_at,counts:{articles:articles.length,climbs:climbs.length,athletes:athletes.length,studies:studies.length,gyms:gyms.length,glossary:glossary.length,sources:sources.length},editorial_date:checkedAt},null,2)+'\n');
 console.log(`Built ${routes.length} static routes at ${base}.`);
 console.log(JSON.stringify({articles:articles.length,climbs:climbs.length,studies:studies.length,sources:sources.length}));
