@@ -30,3 +30,22 @@ document.addEventListener('click',async event=>{
   }catch{const toast=document.querySelector('[data-toast]');if(toast){toast.textContent='書き出せませんでした。再読み込みしてお試しください。';toast.hidden=false;}}
   finally{button.disabled=false;}
 });
+
+// Keep secondary filters discoverable when restored from a shared URL.
+function syncEvidenceContext(){
+ const form=document.querySelector('[data-filter]');
+ if(!form)return;
+ for(const detail of form.querySelectorAll('.filter-extra')){
+  if([...detail.querySelectorAll('[name]')].some(x=>x.value.trim()))detail.open=true;
+ }
+ const history=document.querySelector('[data-grade-history]');
+ if(history){
+  const climbs=new Set([...document.querySelectorAll('tbody [data-item]')].filter(x=>!x.hidden).map(x=>x.dataset.climb));
+  for(const claim of history.querySelectorAll('[data-grade-climb]'))claim.hidden=!climbs.has(claim.dataset.gradeClimb);
+  history.hidden=![...history.querySelectorAll('[data-grade-climb]')].some(x=>!x.hidden);
+ }
+}
+syncEvidenceContext();
+for(const event of ['input','change','reset'])document.querySelector('[data-filter]')?.addEventListener(event,()=>queueMicrotask(syncEvidenceContext));
+window.addEventListener('popstate',()=>queueMicrotask(syncEvidenceContext));
+window.addEventListener('hashchange',()=>queueMicrotask(syncEvidenceContext));
