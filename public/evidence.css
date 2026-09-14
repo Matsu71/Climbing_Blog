@@ -36,6 +36,8 @@ body{background:var(--paper);color:var(--ink)}
 .data-download{align-items:center;gap:10px;flex-wrap:wrap}
 .export-choice{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted)}
 .export-choice select{min-height:40px;border:1px solid var(--rule);border-radius:4px;padding:6px 10px;background:#fff;color:var(--ink);font:inherit}
+.export-choice>span{margin:0;white-space:nowrap;flex:none}
+.export-choice select{width:auto}
 .export-note{font-size:12px;line-height:1.7;color:var(--muted);text-align:right;margin:0 0 12px}
 [data-evidence-download]:disabled{opacity:.5;cursor:not-allowed}
 html.js .export-choice.js-only{display:flex!important}
