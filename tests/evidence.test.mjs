@@ -16,9 +16,9 @@ test('evidence IDs and all claim-level joins are valid',()=>{
  for(const s of db.sources){assert.match(s.url,/^https:\/\//);assert.ok(s.access&&s.locator);assert.equal(s.retrieved_at,'2026-09-14');}
 });
 test('coverage counts do not count missing, ambiguous or calculated values as source measurements',()=>{
- assert.deepEqual([evidenceCounts.athletes,evidenceCounts.measurements,evidenceCounts.ascents,evidenceCounts.clinicalStudies,evidenceCounts.clinicalSources,evidenceCounts.sources],[15,26,24,3,4,33]);
+ assert.deepEqual([evidenceCounts.athletes,evidenceCounts.measurements,evidenceCounts.ascents,evidenceCounts.clinicalStudies,evidenceCounts.clinicalSources,evidenceCounts.sources],[24,42,41,7,8,53]);
  assert.equal(db.collection_complete,false);assert.equal(db.expert_reviewed,false);
- assert.equal(db.measurements.length,28);assert.equal(db.athletes.length,20);
+ assert.equal(db.measurements.length,44);assert.equal(db.athletes.length,31);
 });
 test('measurement date, original units and conflicting historical heights stay distinct',()=>{
  for(const m of db.measurements){assert.equal(m.measured_at,null);assert.ok(['height','weight','wingspan','ape_difference','ape_unresolved'].includes(m.metric));if(m.value!==null)assert.ok(Number.isFinite(m.value));}
@@ -42,16 +42,16 @@ test('medical evidence separates patient counts, study design and limitations',(
 test('data pages are indexable HTML with single H1, real sources and bounded labels',()=>{
  configureBase('/Climbing_Blog/');
  for(const view of ['home',...evidenceViews]){const html=render(view);assert.equal((html.match(/<h1>/g)||[]).length,1);assert.doesNotMatch(html,/理想的なクライマーの体型|未来を切り開く/);assert.match(html,/<link rel="canonical"/);}
- const h=render('athlete-data');assert.equal((h.match(/id="athlete-/g)||[]).length,15);assert.match(h,/169/);assert.match(h,/170/);assert.match(h,/測定時期/);
- assert.equal((render('ascent-data').match(/id="ascent-/g)||[]).length,24);
- assert.equal((render('evidence').match(/id="source-/g)||[]).length,33);
+ const h=render('athlete-data');assert.equal((h.match(/id="athlete-/g)||[]).length,24);assert.match(h,/169/);assert.match(h,/170/);assert.match(h,/測定時期/);
+ assert.equal((render('ascent-data').match(/id="ascent-/g)||[]).length,41);
+ assert.equal((render('evidence').match(/id="source-/g)||[]).length,53);
  for(const row of evidenceSearchIndex())assert.ok(searchIndex().some(s=>s.path===row.path));
 });
 test('CSV exports neutralize formula prefixes',()=>{
  const text=csv([{n:'=HYPERLINK(1)',raw:'+5 ape'}],['n','raw']);assert.ok(text.includes("'=HYPERLINK"));assert.ok(text.includes("'+5 ape"));
 });
 test('branch-based Pages mirrors use the same audited code and data',()=>{
- for(const path of ['bootstrap.mjs','single-article.mjs','src/render.mjs','src/knowledge-render.mjs','src/evidence-render.mjs','data/evidence.mjs','evidence.css','evidence-ui.mjs','index.html'])assert.equal(readFileSync(path,'utf8'),readFileSync('docs/'+path,'utf8'),path);
+ for(const path of ['bootstrap.mjs','single-article.mjs','src/render.mjs','src/knowledge-render.mjs','src/evidence-render.mjs','data/evidence.mjs','data/evidence-initial.mjs','data/evidence-additions.mjs','src/core.mjs','core.mjs','evidence.css','evidence-ui.mjs','index.html'])assert.equal(readFileSync(path,'utf8'),readFileSync('docs/'+path,'utf8'),path);
  for(const file of ['evidence.css','evidence-ui.mjs'])assert.equal(readFileSync(file,'utf8'),readFileSync('public/'+file,'utf8'));
  for(const path of ['bootstrap.mjs','single-article.mjs','docs/single-article.mjs','index.html'])assert.doesNotMatch(readFileSync(path,'utf8'),/featuredArticle|176\.2|61\.5|182\.7|理想的なクライマー/);
 });

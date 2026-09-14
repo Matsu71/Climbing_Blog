@@ -92,6 +92,8 @@ try:
             expect(page).to_have_url(BASE+'read/reading-records/')
             expect(page.locator('h1')).to_be_visible()
         run('glossary full-text search and article navigation',glossary)
+        from evidence_browser import evidence_checks
+        evidence_checks(page,go,run,ROOT,OUT)
         from research_browser import research_checks
         research_checks(page,go,run,ROOT,OUT,'webkit')
         def notebook():

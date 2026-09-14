@@ -1,10 +1,16 @@
 // Local downloads also work on branch-based Pages, where JSON build outputs are absent.
-function revealSource(){
+// Deep links must also work when a query would otherwise hide the target row.
+function revealRecord(){
   let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}
   const target=document.getElementById(id);
-  if(target?.matches('.source-register details')){target.open=true;target.scrollIntoView({block:'start'});}
+  if(!target?.matches('[data-item]'))return;
+  if(target.hidden)document.querySelector('[data-filter]')?.reset();
+  if(target.matches('details'))target.open=true;
+  target.tabIndex=-1;
+  target.focus({preventScroll:true});
+  target.scrollIntoView({block:'start'});
 }
-revealSource();window.addEventListener('hashchange',revealSource);
+revealRecord();window.addEventListener('hashchange',revealRecord);
 document.addEventListener('click',async event=>{
   const button=event.target.closest('[data-evidence-download]');if(!button)return;
   const name=button.dataset.evidenceDownload;
