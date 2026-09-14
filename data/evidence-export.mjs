@@ -12,7 +12,7 @@ export function prepareEvidenceExport(db,key,{scope='all',visibleIds=[],filters=
  const climbs=new Set(key==='ascents'?rows.map(r=>r.climb):[]);
  const gradeClaims=(db.grade_claims??[]).filter(g=>climbs.has(g.climb));
  const sourceIds=new Set(key==='sources'?rows.map(r=>r.id):[]);
- const addSources=r=>{for(const id of [r.source_id,...(r.prior_source_ids??[])])if(id)sourceIds.add(id);};
+ const addSources=r=>{for(const id of [r.source_id,...(r.prior_source_ids??[]),...(r.identity_source_ids??[])])if(id)sourceIds.add(id);};
  rows.forEach(addSources);revisions.forEach(r=>{addSources(r.before);addSources(r.after);});
  gradeClaims.forEach(g=>{addSources(g);if(g.previous_source_id)sourceIds.add(g.previous_source_id);});
  const sources=db.sources.filter(s=>sourceIds.has(s.id));
@@ -30,6 +30,7 @@ export function evidenceCSVRows(bundle){
   ...(row.athlete_id?{athlete_name:athletes.get(row.athlete_id)?.name??row.athlete_id}:{}),
   source_url:row.source_id?sources.get(row.source_id)?.url:row.url,
   prior_source_urls:(row.prior_source_ids??[]).map(id=>sources.get(id)?.url),
+  identity_source_urls:(row.identity_source_ids??[]).map(id=>sources.get(id)?.url),
   export_scope:bundle.scope,export_filters:bundle.filters,export_note:bundle.selection_note,
   ...(bundle.revision_history.some(r=>r.record_id===row.id)?{revision_history:bundle.revision_history.filter(r=>r.record_id===row.id)}:{})
  }));

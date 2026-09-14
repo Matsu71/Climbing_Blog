@@ -6,7 +6,7 @@ from playwright.sync_api import expect
 def evidence_checks(page,go,run,ROOT,OUT):
     def body_data():
         go('athlete-data/')
-        assert page.locator('tbody [data-item]').count()==35
+        assert page.locator('tbody [data-item]').count()==37
         for name,values in [('tomoa-narasaki',['169','170']),('laura-rogora',['152','154'])]:
             for value in values: expect(page.locator('#athlete-'+name)).to_contain_text(value)
         page.locator('[name=metric]').select_option('リーチ')
@@ -15,7 +15,7 @@ def evidence_checks(page,go,run,ROOT,OUT):
         page.locator('[name=q]').fill('一致しない名前0000')
         expect(page.locator('[data-empty]')).to_be_visible()
         page.locator('button[type=reset]').click()
-        assert page.locator('tbody [data-item]:visible').count()==35
+        assert page.locator('tbody [data-item]:visible').count()==37
         page.locator('[name=conflict]').select_option('複数の身長値')
         expect(page.locator('#athlete-laura-rogora')).to_be_visible()
     run('evidence: field filter, conflicting values, empty state and reset',body_data)
@@ -31,21 +31,21 @@ def evidence_checks(page,go,run,ROOT,OUT):
 
     def ascent_download():
         go('ascent-data/')
-        assert page.locator('tbody [data-item]').count()==79
+        assert page.locator('tbody [data-item]').count()==96
         page.locator('[name=q]').fill('Captain Nemo')
         expect(page.locator('tbody [data-item]:visible')).to_contain_text('再登')
         with page.expect_download() as event:
             page.locator('[data-evidence-download="evidence-ascents.json"]').click()
         destination=OUT/'evidence-ascents-downloaded.json';event.value.save_as(str(destination))
         rows=json.loads(destination.read_text())
-        assert len(rows)==79
+        assert len(rows)==96
         assert next(r for r in rows if r['id']=='excalibur-bosi')['ascent_date']=='2025-02-03'
         assert next(r for r in rows if r['climb']=='DNA')['grade'] is None
     run('evidence: ascent semantics and local JSON download',ascent_download)
 
     def medical():
         go('injury-data/')
-        assert page.locator('.study-entry').count()==14
+        assert page.locator('.study-entry').count()==17
         expect(page.locator('.medical-boundary')).to_contain_text('未実施')
         page.locator('.filter-extra > summary').click()
         page.locator('[name=design]').select_option('系統的レビュー')
@@ -53,7 +53,7 @@ def evidence_checks(page,go,run,ROOT,OUT):
         expect(page.locator('.study-entry:visible')).to_contain_text('限界')
         page.locator('button[type=reset]').click()
         page.locator('[name=access]').select_option('抄録')
-        assert page.locator('.study-entry:visible').count()==6
+        assert page.locator('.study-entry:visible').count()==8
         expect(page.locator('#study-physeal-algorithm')).to_contain_text('不整合')
         page.locator('button[type=reset]').click()
         page.locator('[name=purpose]').select_option('受診判断')
@@ -80,11 +80,11 @@ def evidence_checks(page,go,run,ROOT,OUT):
         expect(source).to_be_visible();expect(source).to_have_attribute('open','')
         expect(page.locator('[name=q]')).to_have_value('')
         page.locator('[name=access]').select_option('抄録')
-        assert page.locator('.source-register [data-item]:visible').count()==7
+        assert page.locator('.source-register [data-item]:visible').count()==9
         page.locator('[name=q]').fill('成長期')
         expect(page.locator('.source-register [data-item]:visible')).to_have_attribute('id','source-physeal-algorithm-2021')
         page.locator('button[type=reset]').click()
-        assert page.locator('.source-register [data-item]:visible').count()==76
+        expect(page.locator('.source-register [data-item]:visible')).to_have_count(85)
         go('ascent-data/?q=unmatched0000#ascent-excalibur-brooke')
         expect(page.locator('#ascent-excalibur-brooke')).to_be_visible()
         expect(page.locator('[name=q]')).to_have_value('')
@@ -96,7 +96,7 @@ def evidence_checks(page,go,run,ROOT,OUT):
             page.locator('[data-evidence-download="evidence-clinical.csv"]').click()
         destination=OUT/'evidence-clinical-downloaded.csv';event.value.save_as(str(destination))
         with destination.open(encoding='utf-8-sig',newline='') as handle: rows=list(csv.DictReader(handle))
-        assert len(rows)==14
+        assert len(rows)==17
         p=next(r for r in rows if r['id']=='pulley-pps')
         assert json.loads(p['outcome_counts'])[0]['denominator']==43
         assert '[object Object]' not in destination.read_text()
@@ -189,11 +189,44 @@ def evidence_checks(page,go,run,ROOT,OUT):
         page.locator('[name=precision]').select_option('日まで')
         expect(page.locator('[data-empty]')).to_be_visible()
         page.locator('button[type=reset]').click()
-        assert page.locator('tbody [data-item]:visible').count()==79
+        assert page.locator('tbody [data-item]:visible').count()==96
         go('athlete-data/?q=Kaddi')
         expect(page.locator('#athlete-kaddi-lehmann')).to_contain_text('約157')
         expect(page.locator('#athlete-kaddi-lehmann')).not_to_contain_text('157.48')
     run('evidence: day/month precision filtering and non-spurious converted height precision',date_precision)
+
+    def reviewed_identity_and_history():
+        go('ascent-data/?climb=Supercrackinette')
+        expect(page.locator('[name=climb]')).to_have_value('Super Crackinette')
+        assert page.locator('tbody [data-item]:visible').count()==3
+        page.locator('#ascent-supercrackinette-berthe .row-note > summary').click()
+        expect(page.locator('#ascent-supercrackinette-berthe .row-note')).to_contain_text('元表記：Supercrackinette')
+        page.locator('button[type=reset]').click()
+        page.locator('[name=q]').fill('Supercrackinette')
+        assert page.locator('tbody [data-item]:visible').count()==3
+        go('athlete-data/?q='+quote('伊藤ふたば'))
+        row=page.locator('#athlete-futaba-ito')
+        expect(row).to_contain_text('2018年')
+        expect(row).to_contain_text('現在値ではない')
+        row.locator('.measured-value .measurement-source > summary').last.click()
+        expect(row).to_contain_text('161cm/46kg')
+    run('evidence: reviewed alias recovery and dated original body values',reviewed_identity_and_history)
+
+    def source_families_and_adverse_events():
+        go('evidence/?family='+quote('学術資料'))
+        rows=page.locator('.source-register [data-item]:visible')
+        assert rows.count()>0
+        assert all(x=='学術資料' for x in rows.evaluate_all('(els)=>els.map(e=>e.dataset.family)'))
+        go('evidence/?kind='+quote('原著論文'))
+        expect(page.locator('.filter-extra')).to_have_attribute('open','')
+        expect(page.locator('[name=kind]')).to_have_value('原著論文')
+        go('injury-data/?q='+quote('プーリー再建'))
+        row=page.locator('#study-pulley-reconstruction-series')
+        expect(row).to_be_visible()
+        row.locator('summary',has_text='合併症・不都合').click()
+        expect(row).to_contain_text('10/38')
+        expect(row).to_contain_text('合算')
+    run('evidence: short source families retain original kinds and surgery adverse events',source_families_and_adverse_events)
 
     def data_screenshots():
         original=page.viewport_size

@@ -65,3 +65,12 @@ window.addEventListener('popstate',()=>queueMicrotask(syncEvidenceContext));
 window.addEventListener('hashchange',()=>queueMicrotask(syncEvidenceContext));
 
 for(const select of document.querySelectorAll('[data-export-scope]'))select.addEventListener('change',syncEvidenceContext);
+
+// Preserve links created before the reviewed name correction. This is not fuzzy matching.
+function restoreReviewedClimbAlias(){
+ const params=new URLSearchParams(location.search),control=document.querySelector('[name=climb]');
+ if(!control||params.get('climb')!=='Supercrackinette'||(params.get('discipline')&&params.get('discipline')!=='スポート'))return;
+ control.value='Super Crackinette';control.dispatchEvent(new Event('change',{bubbles:true}));
+}
+if(document.documentElement.dataset.ready==='true')restoreReviewedClimbAlias();
+else document.addEventListener('DOMContentLoaded',restoreReviewedClimbAlias,{once:true});

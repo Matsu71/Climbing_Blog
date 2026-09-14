@@ -3,6 +3,9 @@ import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 import {render,configureBase,searchIndex} from '../src/render.mjs';
 import {evidence} from '../data/evidence.mjs';
+import {evidenceCoverage,evidenceIntegrityErrors} from '../data/evidence-integrity.mjs';
+const integrityErrors=evidenceIntegrityErrors(evidence);
+if(integrityErrors.length)throw Error(integrityErrors.join('\n')); 
 import {evidenceViews,evidenceCounts} from '../src/evidence-render.mjs';
 import {csv} from '../src/core.mjs';
 import {sources,climbs,athletes,studies,gyms,taxonomy,checkedAt} from '../data/catalog.mjs';
@@ -27,12 +30,13 @@ const paths=[];
 for(const [view,id]of routes){const path=view==='home'?'':view+'/'+(id?id+'/':'');const target=resolve(dist,path);await mkdir(target,{recursive:true});await writeFile(resolve(target,'index.html'),render(view,id,originURL.origin));paths.push(path);}
 await copyFile(resolve(dist,'404/index.html'),resolve(dist,'404.html'));
 await mkdir(resolve(dist,'data'),{recursive:true});
-for(const name of ['evidence','evidence-initial','evidence-additions','evidence-expansion','evidence-followup','evidence-export'])await copyFile(resolve(root,'data/'+name+'.mjs'),resolve(dist,'data/'+name+'.mjs'));
+for(const name of ['evidence','evidence-initial','evidence-additions','evidence-expansion','evidence-followup','evidence-export','evidence-continuation-e','evidence-integrity'])await copyFile(resolve(root,'data/'+name+'.mjs'),resolve(dist,'data/'+name+'.mjs'));
 for(const [key,rows] of Object.entries({sources:evidence.sources,measurements:evidence.measurements,ascents:evidence.ascents,clinical:evidence.clinical})){
   await writeFile(resolve(dist,'data/evidence-'+key+'.json'),JSON.stringify(rows,null,2)+'\n');
   const keys=[...new Set(rows.flatMap(Object.keys))];
   await writeFile(resolve(dist,'data/evidence-'+key+'.csv'),csv(rows,keys));
 }
+await writeFile(resolve(dist,'data/evidence-coverage.json'),JSON.stringify(evidenceCoverage(evidence),null,2)+'\n');
 await writeFile(resolve(dist,'data/evidence.json'),JSON.stringify(evidence,null,2)+'\n');
 await writeFile(resolve(dist,'data/research-measurements.json'),JSON.stringify(researchMeasurements,null,2)+'\n');
 await writeFile(resolve(dist,'data/research-measurements.csv'),csv(measurementRows(researchMeasurements),['study_id','source_id','source_locator','outcome','unit','group','n','phase','mean','standard_deviation']));

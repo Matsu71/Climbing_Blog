@@ -42,3 +42,5 @@ body{background:var(--paper);color:var(--ink)}
 [data-evidence-download]:disabled{opacity:.5;cursor:not-allowed}
 html.js .export-choice.js-only{display:flex!important}
 @media(max-width:420px){.data-download{gap:8px;justify-content:flex-start}.data-download button{padding:6px 10px}.export-note{text-align:left}.export-choice{gap:5px}}
+
+.measurement-source{font-weight:400;margin-top:8px;max-width:260px}.measurement-source summary{font-size:11px;color:var(--muted);cursor:pointer}.measurement-source p{font-size:12px;line-height:1.7;overflow-wrap:anywhere}.coverage-summary{margin-bottom:24px}

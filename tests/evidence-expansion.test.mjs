@@ -48,7 +48,7 @@ test('clinical trial allocation is not reconstructed outcome denominator',()=>{
 test('survey inconsistencies and expert counts cannot be presented as treatment success',()=>{
  const s=by(db.clinical,'climber-return-survey');assert.equal(s.n_people,237);assert.equal(s.n_injuries,432);assert.equal(s.region_counts[0].denominator,432);assert.ok(s.data_issues.length>=2);assert.deepEqual(s.outcome_counts,[]);
  const p=by(db.clinical,'ankle-paass');assert.equal(p.n_people,null);assert.equal(p.n_experts,155);assert.equal(p.role,'復帰評価');assert.deepEqual(p.outcome_counts,[]);
- assert.equal(evidenceCounts.clinicalStudies,12);assert.equal(evidenceCounts.clinicalConsensus,1);
+ assert.equal(evidenceCounts.clinicalStudies,15);assert.equal(evidenceCounts.clinicalConsensus,1);
 });
 test('applicability is explicit; climber-mixed studies are not relabeled climber-only',()=>{
  assert.equal(clinicalScope(by(db.clinical,'taping')),'クライマーを含む');assert.equal(clinicalScope(by(db.clinical,'lumbrical-series')),'クライマーを含む');

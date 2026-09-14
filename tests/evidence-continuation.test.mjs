@@ -9,7 +9,7 @@ const by=(rows,id)=>rows.find(x=>x.id===id);
 test('continuation preserves previous claims and records explicit additions',()=>{
  for(const k of ['sources','athletes','measurements','ascents','clinical'])assert.deepEqual(db[k].slice(0,initial[k].length),initial[k]);
  assert.deepEqual([batch.sources.length,batch.athletes.length,batch.measurements.length,batch.ascents.length,batch.clinical.length],[20,11,16,17,4]);
- assert.deepEqual(db.grade_claims.slice(0,initial.grade_claims.length),initial.grade_claims);assert.equal(db.queue.length,24);
+ assert.deepEqual(db.grade_claims.slice(0,initial.grade_claims.length),initial.grade_claims);assert.equal(db.queue.length,27);
 });
 test('new body values preserve source conflicts and six reported arm spans',()=>{
  const heights=db.measurements.filter(x=>x.athlete_id==='laura-rogora'&&x.metric==='height');
@@ -40,7 +40,7 @@ test('clinical people, injuries and outcome-specific denominators are distinct',
 test('record filters and access status are rendered in static HTML',()=>{
  const ascent=renderEvidence('ascent-data','/');assert.match(ascent,/name="athlete"/);assert.match(ascent,/オンサイト/);assert.match(ascent,/資料公開 2026-06-08/);
  const medical=renderEvidence('injury-data','/');assert.match(medical,/抄録のみ/);assert.match(medical,/name="purpose"/);assert.match(medical,/本文確認/);
- const source=renderEvidence('evidence','/');assert.match(source,/data-results/);assert.match(source,/一部採録/);assert.match(source,/収録出典76件/);
+ const source=renderEvidence('evidence','/');assert.match(source,/data-results/);assert.match(source,/一部採録/);assert.match(source,/収録出典85件/);
 });
 test('nested outcome denominators survive CSV export instead of object coercion',()=>{
  const value=csv([{outcomes:[{numerator:38,denominator:43}],meta:{unit:'人'}}],['outcomes','meta']);

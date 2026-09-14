@@ -20,7 +20,7 @@ test('batch 4 totals and original sources are preserved without counting full-te
   const history=db.revision_history.filter(r=>r.record_id===old.id);
   assert.deepEqual(history.length?history[0].before:by(db.clinical,old.id),old);
  }
- assert.equal(db.batch_id,followup.id);assert.equal(db.clinical.filter(x=>x.doi==='10.1136/bjsports-2013-092947').length,1);
+ assert.ok(db.batches.some(b=>b.id===followup.id));assert.equal(db.clinical.filter(x=>x.doi==='10.1136/bjsports-2013-092947').length,1);
  assert.equal(db.collection_complete,false);assert.equal(db.expert_reviewed,false);
 });
 test('official in-page height disagreement is not silently reconciled',()=>{
