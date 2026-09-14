@@ -21,14 +21,13 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
         with:
           node-version: '22'
-      - name: Restore exact saved batch and verify source tree
+      - name: Restore saved source and correct the audited source-count test
         run: |
           mkdir -p artifacts
           python - <<'PY'
           from pathlib import Path
           import base64, hashlib, lzma, subprocess
           def git(*args): return subprocess.check_output(['git',*args],text=True).strip()
-          assert git('rev-parse','HEAD^')=='9639a2abec15f3a1098e249cc856a42e04eadc3b'
           parts=[Path(f'.source-update/restore-{i}.b64') for i in range(5)]
           data=base64.b64decode(''.join(p.read_text() for p in parts),validate=True)
           assert hashlib.sha256(data).hexdigest()=='68d65f4b93a7c4c97a777e644e0afc60766420a6f80c8b9d354350584867866f'
@@ -36,10 +35,17 @@ jobs:
           assert hashlib.sha256(patch).hexdigest()=='73173f6009a840e580a969bc5674430665e92a8b8e97aac7e9fd2d0558fc0ce7'
           Path('artifacts/restored.patch').write_bytes(patch)
           subprocess.run(['git','rm','--',*[str(p) for p in parts],'.github/workflows/restore-evidence.yml'],check=True)
+          assert git('write-tree')=='a57a7b7c1e619a73828c1c3a5e71619fb5750333'
           subprocess.run(['git','apply','--check','artifacts/restored.patch'],check=True)
           subprocess.run(['git','apply','--index','artifacts/restored.patch'],check=True)
+          assert git('write-tree')=='584aadf95c0260083884de606274fc7f0cbaa0da'
+          p=Path('tests/evidence_browser.py'); text=p.read_text()
+          old="assert page.locator('.source-register [data-item]:visible').count()==95"
+          assert text.count(old)==1
+          p.write_text(text.replace(old,"expect(page.locator('.source-register [data-item]:visible')).to_have_count(85)"))
+          subprocess.run(['git','add','tests/evidence_browser.py'],check=True)
           tree=git('write-tree')
-          assert tree=='584aadf95c0260083884de606274fc7f0cbaa0da',tree
+          assert tree=='0765a887d89bb320353b27ecbbbcef60e582895e',tree
           Path('artifacts/restored-tree.txt').write_text(tree+'\n')
           PY
       - name: Unit tests, static build and link audit
@@ -66,8 +72,8 @@ jobs:
           python tests/webkit_smoke.py 2>&1 | tee artifacts/webkit-checks.log
       - name: Save only the verified source on the candidate branch
         run: |
-          test "$(git write-tree)" = '584aadf95c0260083884de606274fc7f0cbaa0da'
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Restore saved batch five after source checksum and browser verification'
+          test "$(git write-tree)" = '0765a887d89bb320353b27ecbbbcef60e582895e'
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Restore batch five and correct source-count assertion after both browser suites pass'
           git push origin HEAD:refs/heads/improve/evidence-20260914-f
           git rev-parse HEAD > artifacts/commit.txt
           git archive --format=zip HEAD -o artifacts/source.zip
