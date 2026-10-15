@@ -1,59 +1,65 @@
-# CRUX — クライミングブログ
+# CRUX — クライミングの記事とデータ
 
-最終目標は、世界一のクライミングブログを作ること。現在は**記事の量産より、データ収集と出典確認・見やすさの改善を優先**しています。
+公開ページ：https://matsu71.github.io/Climbing_Blog/
 
-## 収録データ（2026-09-14・第3バッチまで）
+クライミングの体格・トレーニング・怪我・記録を、出典つきのデータと研究から解説するブログです。
 
-| 領域 | 前回 → 現在 |
+## フォルダ構成
+
+| 場所 | 中身 |
 |---|---|
-| 身体数値のある選手 | 24人 → 30人 |
-| 出典付き掲載数値 | 42件 → 54件（身長・体重・リーチ） |
-| 登攀記録 | 36課題41登攀 → 56課題64登攀 |
-| 医療研究 | 7件 → 10件。別に合意声明1件・公的患者向け資料1件 |
-| 出典台帳 | 53件 → 67件 |
+| `content/articles/` | 記事の原稿（Markdown）。1ファイルが1記事です |
+| `content/data/` | データ（選手の体格、登攀記録・怪我の研究・出典、ジム、用語） |
+| `src/` | ページを作るプログラム（レイアウト、Markdown、グラフ、統計） |
+| `assets/` | CSS・JavaScript・アイコン |
+| `scripts/` | ビルド・検査・プレビュー・データ収集 |
+| `tests/` | テスト |
+| `docs/` | 企画メモ（`ideas/`）と過去の作業記録（`history/`） |
 
-今回は12数値・23登攀・医療原著3本と合意声明1件・14出典を追加しました。新しい身長・リーチは6人分。女性のボルダー7件・スポート5件を含みます。選手レジストリ39人のうち身体数値のない9人、計算値1件・単位未確認1件は掲載数値の件数に含めません。
+`index.html`・`404.html`・`articles/`・`data/`・`glossary/`・`about/`・`sitemap.xml`・`robots.txt` は、`npm run build` で作る公開用のファイルです。手で編集しません。GitHub Pages が main ブランチのルートをそのまま公開するため、生成したファイルもコミットします。
 
-新しい医学資料は本文確認1件・抄録確認3件。一般患者や一般スポーツの試験と、クライマーを対象にした研究を分けています。患者数・損傷数・結果別の分母・専門家パネル数は別管理。全分野の収集は未完了です。**新規記事は追加していません。** 既存記事28本等は今回と同じ出典監査を済ませたものとは扱いません。
+## よく使うコマンド
 
-[第3バッチの採録・実装記録](project-docs/evidence-expansion-2026-09-14.md) / [第2バッチの記録](project-docs/evidence-continuation-2026-09-14.md)
-
-## 主な入口
-
-`athlete-data/` 選手の身体データ / `ascent-data/` 登攀記録 / `injury-data/` 怪我の資料 / `evidence/` 出典と未収集項目。
-
-具体的な短い見出しと検索・絞り込みを中心に再設計しました。旧「理想体型」記事に含まれた、出典のない推定値・平均値は撤回しています。
-
-## 資料とソース
-
-- [作業方針](AGENTS.md)
-- [最終目標](project-docs/site-vision.md)
-- [今回の比較調査・構成・編集基準](project-docs/data-first-2026-09-14.md)
-- [状態と残課題](project-docs/implementation/STATUS.md)
-- [元の構想全文](project-docs/original-brief.md)
-
-`data/evidence.mjs` が収録データの統合入口です。初回の正本は `data/evidence-initial.mjs`、第2バッチは `data/evidence-additions.mjs`、第3バッチは `data/evidence-expansion.mjs` に保持します。出典ごとの数値、原表記、欠損、日付精度、研究の限界、未解決項目を保存しています。`data/catalog.mjs` 等は既存資料です。
-
-## 起動・検証
-
-Node.js 22以上。サイト本体に外部npm依存はありません。
+Node.js 22以上が必要です。外部のパッケージは使っていません。
 
 ```sh
-npm run check
-npm run serve
-# http://127.0.0.1:4173/Climbing_Blog/
-python -m unittest discover -s tests -p 'test_*.py'
-# Playwrightとブラウザーを用意した環境:
-python tests/browser_smoke.py
-python tests/webkit_smoke.py
+npm run build   # 公開用のファイルを作り直す
+npm run check   # 生成物が最新か、リンク切れがないかを検査し、テストを実行
+npm run serve   # http://127.0.0.1:4173/Climbing_Blog/ で表示を確認
 ```
 
-`dist/` は104経路の静的出力です。本文と出典はJavaScriptなしでも閲覧可能です。JSON/CSVを同時に生成します。ルート・旧docsの互換公開は同じ元データからブラウザーで描画し、書き出しも端末内で行います。公開設定は変更しません。
+## 記事を書く
 
-ソースの反映・検証成功・公開成功は別状態です。CIの `Verify CRUX` とPagesの結果をそれぞれ確認してください。[公開手順](project-docs/implementation/DEPLOYMENT.md)
+`content/articles/<URLにする名前>.md` を作り、先頭に次の項目を書きます。
 
-## 編集・プライバシー
+```markdown
+---
+title: "記事のタイトル"
+category: 身体・能力
+summary: "一覧やトップに出る短い説明"
+published: 2026-10-15
+updated: 2026-10-15
+author: CRUX編集部
+---
+```
 
-未確認の値は推測で補いません。古い体重や成長期の身長を現在値にしません。医療情報は専門家監修前で、個別の診断・治療・復帰許可ではありません。理想体型や減量目標を提示するデータでもありません。
+本文はMarkdownです。見出し（`##`・`###`）、表、箇条書き、脚注（`[^id]` と末尾の `[^id]: 出典`）が使えます。ほかに次の書き方があります。
 
-トライノートは明示操作でブラウザー内に保存します。クラウド送信・同期・アカウントはありません。第三者の文章・写真・動画を丸ごと転載しません。
+- `:::summary` 〜 `:::` … 冒頭の「この記事の要点」
+- `:::note 見出し` 〜 `:::` … 注意書きの枠
+- `:::figure 名前` 〜 `:::` … グラフ。front matter に `data: 名前` を書くと、`src/articles/名前.mjs` が計算した数値とグラフを使えます
+- `{{height.male.mean|1}}` … データから計算した数値の差し込み（`|1` は小数点以下の桁数）
+
+カテゴリーは `src/pages.mjs` の `CATEGORIES` から選びます。
+
+## データ
+
+- `content/data/climbers/` … IFSC表彰台経験者の身長・リーチ・体重と、比較に使う統計。`npm run collect:climbers` で IFSC と DigitalRock から取り直せます（取得したデータは `.cache/collect/` に保存し、Gitには入れません）。
+- `content/data/evidence.json` … 2026年9月に集めた出典つきデータ（選手の公式値、高難度の登攀記録、怪我の研究、出典）。
+- `content/data/gyms.json`・`content/data/glossary.json` … ジムと用語集。
+
+## 公開
+
+main に push すると、GitHub Pages（main / ルート）がそのまま公開します。GitHub Actions は使いません（全プロジェクト共通の方針）。`.github/workflows/` は以前の記録として残しているだけで、現在は動いていません。
+
+作業の方針は [AGENTS.md](AGENTS.md)、今回の再構成の記録は [docs/2026-10-15-restructure.md](docs/2026-10-15-restructure.md) にあります。

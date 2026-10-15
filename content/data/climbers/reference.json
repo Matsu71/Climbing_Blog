@@ -1,0 +1,122 @@
+{
+  "japan": {
+    "title": "厚生労働省「平成30年・令和元年国民健康・栄養調査」特別集計（18〜29歳）",
+    "url": "https://www.mhlw.go.jp/bunya/kenkou/dl/kenkou_eiyou_chousa_tokubetsushuukei_h30-r01.pdf",
+    "retrieved_at": "2026-10-15",
+    "note": "2018年と2019年の調査を合わせた集計。妊婦・授乳婦を除く。",
+    "male": {
+      "n": 382,
+      "height": 171.6,
+      "height_sd": 6.1,
+      "weight": 65.4,
+      "weight_sd": 11.6,
+      "bmi": 22.2,
+      "bmi_sd": 3.6
+    },
+    "female": {
+      "n": 348,
+      "height": 158.0,
+      "height_sd": 5.8,
+      "weight": 52.0,
+      "weight_sd": 8.4,
+      "bmi": 20.8,
+      "bmi_sd": 3.1
+    }
+  },
+  "research_groups": {
+    "title": "Ginszt M, Saito M, Zięba E, Majcher P, Kikuchi N. Body Composition, Anthropometric Parameters, and Strength-Endurance Characteristics of Sport Climbers: A Systematic Review. J Strength Cond Res. 2023;37(6):1339-1348",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10212580/",
+    "doi": "10.1519/JSC.0000000000004464",
+    "retrieved_at": "2026-10-15",
+    "note": "レビューの表2から、成人の上級〜エリート群だけを抜き出しています。BMIが表にない群は身長・体重の平均から計算しています（bmi_computed）。",
+    "groups": [
+      {
+        "study": "Levernier et al. 2020",
+        "group": "ボルダー競技者（ボルダー8B超）",
+        "sex": "male",
+        "n": 11,
+        "height": 174.91,
+        "weight": 64.85,
+        "bmi": null
+      },
+      {
+        "study": "Levernier et al. 2020",
+        "group": "リード競技者（8c超レッドポイント）",
+        "sex": "male",
+        "n": 8,
+        "height": 174.0,
+        "weight": 62.03,
+        "bmi": null
+      },
+      {
+        "study": "Levernier et al. 2020",
+        "group": "スピード競技者",
+        "sex": "male",
+        "n": 5,
+        "height": 177.6,
+        "weight": 68.94,
+        "bmi": null
+      },
+      {
+        "study": "Philippe et al. 2012",
+        "group": "リード（8a〜9a+）",
+        "sex": "male",
+        "n": 6,
+        "height": 179.2,
+        "weight": 70.5,
+        "bmi": 21.8
+      },
+      {
+        "study": "Kemmler et al. 2006",
+        "group": "リード（8a超）",
+        "sex": "male",
+        "n": 20,
+        "height": 178.1,
+        "weight": 67.4,
+        "bmi": 21.2
+      },
+      {
+        "study": "Ozimek et al. 2017",
+        "group": "リード（8b〜8c）",
+        "sex": "male",
+        "n": 6,
+        "height": 177.4,
+        "weight": 66.92,
+        "bmi": 21.18
+      },
+      {
+        "study": "Philippe et al. 2012",
+        "group": "リード（8a+〜8b+）",
+        "sex": "female",
+        "n": 6,
+        "height": 162.1,
+        "weight": 54.1,
+        "bmi": 20.6
+      },
+      {
+        "study": "Giles et al. 2021",
+        "group": "リード（7c〜8a+）",
+        "sex": "female",
+        "n": 17,
+        "height": 163.4,
+        "weight": 56.5,
+        "bmi": 21.2
+      }
+    ],
+    "citations": {
+      "Levernier et al. 2020": "Levernier G, Samozino P, Laffaye G. Force-velocity-power profile in high-elite boulder, lead, and speed climber competitors. Int J Sports Physiol Perform. 2020",
+      "Philippe et al. 2012": "Philippe M, et al. Climbing-specific finger flexor performance and forearm muscle oxygenation in elite male and female sport climbers. Eur J Appl Physiol. 2012;112:2839-2847",
+      "Limonta et al. 2016": "Limonta E, et al. Motor unit activation strategy during a sustained isometric contraction of finger flexor muscles in elite climbers. J Sports Sci. 2016;34:133-142",
+      "Kemmler et al. 2006": "Kemmler W, et al. Effect of exercise, body composition, and nutritional intake on bone parameters in male elite rock climbers. Int J Sports Med. 2006;27:653-659",
+      "Ozimek et al. 2017": "Ozimek M, et al. The role of physique, strength and endurance in the achievements of elite climbers. PLoS One. 2017;12:e0182026",
+      "Giles et al. 2021": "Giles D, et al. Anthropometry and performance characteristics of recreational advanced to elite female rock climbers. J Sports Sci. 2021;39:48-56"
+    },
+    "excluded": [
+      {
+        "study": "Limonta et al. 2016",
+        "group": "リード（8a〜8b+）男子11人",
+        "reason": "表の平均身長171cm・平均体重63.2kgから計算したBMI（約21.6）と、表のBMI 20.04が合わないため。どちらの値が正しいか確認できないので比較から外しています。"
+      }
+    ]
+  }
+}

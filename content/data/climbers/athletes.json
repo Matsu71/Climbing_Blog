@@ -1,0 +1,7111 @@
+{
+ "meta": {
+  "title": "IFSC表彰台経験者の体格データ",
+  "retrieved_at": "2026-10-15",
+  "population": "IFSCのワールドカップ・世界選手権・五輪（2010〜2025年）で1回以上3位以内に入った選手",
+  "sources": {
+   "ifsc": "https://ifsc.results.info/ （選手プロフィールの height・arm_span と大会結果）",
+   "digitalrock": "https://www.digitalrock.de/ （選手が登録した height・weight。登録時期は不明）"
+  },
+  "notes": [
+   "値は各サイトの掲載値で、測定日は分かりません。推測による補完はしていません。",
+   "DigitalRockの選手は、名・姓・国が一致し、候補が複数あるときは生年も一致した場合だけ対応づけています。"
+  ],
+  "provenance": {
+   "author": {
+    "actor": "collect-climbers",
+    "model": "claude-opus-5-5",
+    "reasoningEffort": "max"
+   }
+  },
+  "counts": {
+   "athletes": 279,
+   "ifsc_results": 36567,
+   "digitalrock_people": 3380
+  }
+ },
+ "athletes": [
+  {
+   "ifsc_id": 1147,
+   "name": "Janja Garnbret",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 1999,
+   "group": "climbing",
+   "podiums": {
+    "lead": 51,
+    "boulder": 27,
+    "combined": 5,
+    "boulder_lead": 2
+   },
+   "wins": {
+    "lead": 34,
+    "boulder": 22,
+    "combined": 5,
+    "boulder_lead": 2
+   },
+   "podium_total": 85,
+   "win_total": 63,
+   "first_podium_year": 2015,
+   "last_podium_year": 2025,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1147",
+   "dr_id": "11989",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11989",
+   "dr_height": 164,
+   "dr_weight": 47,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2253,
+   "name": "Akiyo Noguchi",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 51,
+    "lead": 8,
+    "combined": 4
+   },
+   "wins": {
+    "boulder": 17
+   },
+   "podium_total": 63,
+   "win_total": 17,
+   "first_podium_year": 2010,
+   "last_podium_year": 2021,
+   "height": 167,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2253",
+   "dr_id": "6326",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6326",
+   "dr_height": 165,
+   "dr_weight": 49,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2035,
+   "name": "Ja In Kim",
+   "sex": "female",
+   "country": "KOR",
+   "birth_year": 1988,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 5,
+    "lead": 56
+   },
+   "wins": {
+    "lead": 30,
+    "boulder": 1
+   },
+   "podium_total": 61,
+   "win_total": 31,
+   "first_podium_year": 2010,
+   "last_podium_year": 2023,
+   "height": 152,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2035",
+   "dr_id": "5983",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5983",
+   "dr_height": 153,
+   "dr_weight": 42,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1122,
+   "name": "Mina Markovic",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "lead": 39,
+    "boulder": 3
+   },
+   "wins": {
+    "lead": 18,
+    "boulder": 2
+   },
+   "podium_total": 42,
+   "win_total": 20,
+   "first_podium_year": 2010,
+   "last_podium_year": 2017,
+   "height": 161,
+   "arm_span": 161,
+   "ifsc_url": "https://ifsc.results.info/athlete/1122",
+   "dr_id": "5169",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5169",
+   "dr_height": 161,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 110,
+   "name": "Iuliia Kaplina",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1993,
+   "group": "speed",
+   "podiums": {
+    "speed": 35
+   },
+   "wins": {
+    "speed": 12
+   },
+   "podium_total": 35,
+   "win_total": 12,
+   "first_podium_year": 2012,
+   "last_podium_year": 2021,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/110",
+   "dr_id": "10857",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10857",
+   "dr_height": 165,
+   "dr_weight": 53,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1211,
+   "name": "Anna Stöhr",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1988,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 33
+   },
+   "wins": {
+    "boulder": 17
+   },
+   "podium_total": 33,
+   "win_total": 17,
+   "first_podium_year": 2010,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1211",
+   "dr_id": "5630",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5630",
+   "dr_height": 163,
+   "dr_weight": 54,
+   "dr_last_competition": "2017-08-18"
+  },
+  {
+   "ifsc_id": 636,
+   "name": "Shauna Coxsey",
+   "sex": "female",
+   "country": "GBR",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 31,
+    "combined": 2
+   },
+   "wins": {
+    "boulder": 11
+   },
+   "podium_total": 33,
+   "win_total": 11,
+   "first_podium_year": 2012,
+   "last_podium_year": 2019,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/636",
+   "dr_id": "8247",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8247",
+   "dr_height": 163,
+   "dr_weight": 58,
+   "dr_last_competition": "2019-08-18"
+  },
+  {
+   "ifsc_id": 82,
+   "name": "Mariia Krasavina",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 31
+   },
+   "wins": {
+    "speed": 7
+   },
+   "podium_total": 31,
+   "win_total": 7,
+   "first_podium_year": 2010,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/82",
+   "dr_id": "9281",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9281",
+   "dr_height": 171,
+   "dr_weight": 52,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 479,
+   "name": "Anouck Jaubert",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 30
+   },
+   "wins": {
+    "speed": 15
+   },
+   "podium_total": 30,
+   "win_total": 15,
+   "first_podium_year": 2014,
+   "last_podium_year": 2019,
+   "height": 169,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/479",
+   "dr_id": "10354",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10354",
+   "dr_height": 169,
+   "dr_weight": 60,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1226,
+   "name": "Jessica Pilz",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "lead": 24,
+    "combined": 3,
+    "boulder": 1,
+    "boulder_lead": 2
+   },
+   "wins": {
+    "lead": 4,
+    "combined": 1
+   },
+   "podium_total": 30,
+   "win_total": 5,
+   "first_podium_year": 2014,
+   "last_podium_year": 2024,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1226",
+   "dr_id": "9970",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9970",
+   "dr_height": 163,
+   "dr_weight": 52,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 2848,
+   "name": "Aleksandra Miroslaw",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 29
+   },
+   "wins": {
+    "speed": 18
+   },
+   "podium_total": 29,
+   "win_total": 18,
+   "first_podium_year": 2012,
+   "last_podium_year": 2025,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2848",
+   "dr_id": "9493",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9493",
+   "dr_height": 162,
+   "dr_weight": 49,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 2294,
+   "name": "Miho Nonaka",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 26,
+    "speed": 1,
+    "combined": 1
+   },
+   "wins": {
+    "boulder": 4
+   },
+   "podium_total": 28,
+   "win_total": 4,
+   "first_podium_year": 2014,
+   "last_podium_year": 2025,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2294",
+   "dr_id": "12039",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12039",
+   "dr_height": 162,
+   "dr_weight": 53,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 1803,
+   "name": "Natalia Grossman",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 16,
+    "lead": 7,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 12
+   },
+   "podium_total": 24,
+   "win_total": 12,
+   "first_podium_year": 2021,
+   "last_podium_year": 2024,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1803",
+   "dr_id": "13921",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13921",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 2080,
+   "name": "Chaehyun Seo",
+   "sex": "female",
+   "country": "KOR",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "lead": 21,
+    "boulder_lead": 1,
+    "boulder": 1
+   },
+   "wins": {
+    "lead": 7
+   },
+   "podium_total": 23,
+   "win_total": 7,
+   "first_podium_year": 2019,
+   "last_podium_year": 2025,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2080",
+   "dr_id": "14506",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=14506",
+   "dr_height": 161,
+   "dr_weight": 48,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 315,
+   "name": "Anak Verhoeven",
+   "sex": "female",
+   "country": "BEL",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "lead": 20
+   },
+   "wins": {
+    "lead": 3
+   },
+   "podium_total": 20,
+   "win_total": 3,
+   "first_podium_year": 2014,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/315",
+   "dr_id": "9867",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9867",
+   "dr_height": 163,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 1811,
+   "name": "Brooke Raboutou",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 9,
+    "lead": 6,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 16,
+   "win_total": 1,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 158,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1811",
+   "dr_id": "13954",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13954",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 2380,
+   "name": "Ai Mori",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1,
+    "lead": 12,
+    "boulder_lead": 2
+   },
+   "wins": {
+    "lead": 5,
+    "boulder_lead": 1
+   },
+   "podium_total": 15,
+   "win_total": 6,
+   "first_podium_year": 2019,
+   "last_podium_year": 2025,
+   "height": 154,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2380",
+   "dr_id": "66821",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=66821",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1710,
+   "name": "Alex Puccio",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 14
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 14,
+   "win_total": 1,
+   "first_podium_year": 2011,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1710",
+   "dr_id": "7286",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7286",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 62,
+   "name": "Alina Gaidamakina",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 13
+   },
+   "wins": {
+    "speed": 8
+   },
+   "podium_total": 13,
+   "win_total": 8,
+   "first_podium_year": 2011,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/62",
+   "dr_id": "7234",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7234",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-09-14"
+  },
+  {
+   "ifsc_id": 2263,
+   "name": "Momoka Oda",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "lead": 11
+   },
+   "wins": {
+    "lead": 2
+   },
+   "podium_total": 13,
+   "win_total": 2,
+   "first_podium_year": 2010,
+   "last_podium_year": 2013,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2263",
+   "dr_id": "9097",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9097",
+   "dr_height": 154,
+   "dr_weight": 54,
+   "dr_last_competition": "2018-06-02"
+  },
+  {
+   "ifsc_id": 11462,
+   "name": "Oriane Bertone",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 2005,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 13
+   },
+   "wins": {
+    "boulder": 2
+   },
+   "podium_total": 13,
+   "win_total": 2,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11462",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2834,
+   "name": "Edyta Ropek",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 1979,
+   "group": "speed",
+   "podiums": {
+    "speed": 12
+   },
+   "wins": {
+    "speed": 5
+   },
+   "podium_total": 12,
+   "win_total": 5,
+   "first_podium_year": 2010,
+   "last_podium_year": 2015,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2834",
+   "dr_id": "3547",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3547",
+   "dr_height": 178,
+   "dr_weight": 67,
+   "dr_last_competition": "2018-05-12"
+  },
+  {
+   "ifsc_id": 2823,
+   "name": "Juliane Wurm",
+   "sex": "female",
+   "country": "GER",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 12
+   },
+   "wins": {
+    "boulder": 3
+   },
+   "podium_total": 12,
+   "win_total": 3,
+   "first_podium_year": 2010,
+   "last_podium_year": 2015,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2823",
+   "dr_id": "6064",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6064",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2015-08-04"
+  },
+  {
+   "ifsc_id": 3014,
+   "name": "Lijuan Deng",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 12
+   },
+   "wins": {
+    "speed": 5
+   },
+   "podium_total": 12,
+   "win_total": 5,
+   "first_podium_year": 2022,
+   "last_podium_year": 2025,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3014",
+   "dr_id": "71505",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=71505",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 81,
+   "name": "Yuliya Levochkina",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 12
+   },
+   "wins": {
+    "speed": 5
+   },
+   "podium_total": 12,
+   "win_total": 5,
+   "first_podium_year": 2010,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/81",
+   "dr_id": "9133",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9133",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2015-07-10"
+  },
+  {
+   "ifsc_id": 1999,
+   "name": "Emma Hunt",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 2003,
+   "group": "speed",
+   "podiums": {
+    "speed": 11
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 11,
+   "win_total": 2,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1999",
+   "dr_id": "74002",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=74002",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 1224,
+   "name": "Magdalena Röck",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "lead": 11
+   },
+   "wins": {
+    "lead": 2
+   },
+   "podium_total": 11,
+   "win_total": 2,
+   "first_podium_year": 2011,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1224",
+   "dr_id": "8955",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8955",
+   "dr_height": 158,
+   "dr_weight": 49,
+   "dr_last_competition": "2019-07-04"
+  },
+  {
+   "ifsc_id": 2878,
+   "name": "Aleksandra Kalucka",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 2001,
+   "group": "speed",
+   "podiums": {
+    "speed": 10
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 10,
+   "win_total": 1,
+   "first_podium_year": 2019,
+   "last_podium_year": 2024,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2878",
+   "dr_id": "13293",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13293",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 73,
+   "name": "Anna Tsyganova",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1993,
+   "group": "speed",
+   "podiums": {
+    "speed": 10
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 10,
+   "win_total": 1,
+   "first_podium_year": 2011,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/73",
+   "dr_id": "8428",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8428",
+   "dr_height": 166,
+   "dr_weight": null,
+   "dr_last_competition": "2019-07-04"
+  },
+  {
+   "ifsc_id": 13021,
+   "name": "Annie Sanders",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 2007,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 5,
+    "lead": 5
+   },
+   "wins": {
+    "boulder": 2,
+    "lead": 1
+   },
+   "podium_total": 10,
+   "win_total": 3,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 161,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13021",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 454,
+   "name": "Melissa Le Neve",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 10
+   },
+   "wins": {},
+   "podium_total": 10,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/454",
+   "dr_id": "9074",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9074",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-09-14"
+  },
+  {
+   "ifsc_id": 2879,
+   "name": "Natalia Kalucka",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 2001,
+   "group": "speed",
+   "podiums": {
+    "speed": 10
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 10,
+   "win_total": 2,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2879",
+   "dr_id": "13294",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13294",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 928,
+   "name": "Laura Rogora",
+   "sex": "female",
+   "country": "ITA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "lead": 9
+   },
+   "wins": {
+    "lead": 2
+   },
+   "podium_total": 9,
+   "win_total": 2,
+   "first_podium_year": 2020,
+   "last_podium_year": 2025,
+   "height": 152,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/928",
+   "dr_id": "13189",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13189",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1207,
+   "name": "Angela Eiter",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1986,
+   "group": "climbing",
+   "podiums": {
+    "lead": 8
+   },
+   "wins": {
+    "lead": 4
+   },
+   "podium_total": 8,
+   "win_total": 4,
+   "first_podium_year": 2010,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1207",
+   "dr_id": "3487",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3487",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2013-05-03"
+  },
+  {
+   "ifsc_id": 11357,
+   "name": "Desak Made Rita Kusuma Dewi",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 2001,
+   "group": "speed",
+   "podiums": {
+    "speed": 8
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 8,
+   "win_total": 2,
+   "first_podium_year": 2022,
+   "last_podium_year": 2025,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11357",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1121,
+   "name": "Maja Stremfelj",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 1985,
+   "group": "climbing",
+   "podiums": {
+    "lead": 8
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 8,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1121",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3337,
+   "name": "Aries Susanti Rahayu",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 1995,
+   "group": "speed",
+   "podiums": {
+    "speed": 7
+   },
+   "wins": {
+    "speed": 4
+   },
+   "podium_total": 7,
+   "win_total": 4,
+   "first_podium_year": 2017,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3337",
+   "dr_id": "67658",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=67658",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 11468,
+   "name": "Erin Mcneice",
+   "sex": "female",
+   "country": "GBR",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3,
+    "lead": 4
+   },
+   "wins": {
+    "lead": 2,
+    "boulder": 1
+   },
+   "podium_total": 7,
+   "win_total": 3,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11468",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 469,
+   "name": "Fanny Gibert",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 6,
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 7,
+   "win_total": 0,
+   "first_podium_year": 2014,
+   "last_podium_year": 2020,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/469",
+   "dr_id": "9989",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9989",
+   "dr_height": 166,
+   "dr_weight": 51,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1219,
+   "name": "Johanna Ernst",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "lead": 7
+   },
+   "wins": {
+    "lead": 3
+   },
+   "podium_total": 7,
+   "win_total": 3,
+   "first_podium_year": 2011,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1219",
+   "dr_id": "7563",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7563",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2013-07-10"
+  },
+  {
+   "ifsc_id": 4735,
+   "name": "Kseniia Alekseeva",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": null,
+   "group": "speed",
+   "podiums": {
+    "speed": 7
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 7,
+   "win_total": 2,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4735",
+   "dr_id": "5149",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5149",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2011-09-07"
+  },
+  {
+   "ifsc_id": 455,
+   "name": "Hélène Janicot",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "lead": 6
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 6,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2023,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/455",
+   "dr_id": "9077",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9077",
+   "dr_height": 165,
+   "dr_weight": null,
+   "dr_last_competition": "2018-09-29"
+  },
+  {
+   "ifsc_id": 2930,
+   "name": "Cuilian He",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 1989,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2930",
+   "dr_id": "8419",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8419",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-05-03"
+  },
+  {
+   "ifsc_id": 13154,
+   "name": "Jimin Jeong",
+   "sex": "female",
+   "country": "KOR",
+   "birth_year": 2004,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {},
+   "podium_total": 5,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 166,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13154",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2847,
+   "name": "Klaudia Buczek",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 1991,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2847",
+   "dr_id": "9238",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9238",
+   "dr_height": 164,
+   "dr_weight": 50,
+   "dr_last_competition": "2018-10-27"
+  },
+  {
+   "ifsc_id": 3840,
+   "name": "Stasa Gejo",
+   "sex": "female",
+   "country": "SRB",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 5
+   },
+   "wins": {},
+   "podium_total": 5,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2023,
+   "height": 175,
+   "arm_span": 185,
+   "ifsc_url": "https://ifsc.results.info/athlete/3840",
+   "dr_id": "10338",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10338",
+   "dr_height": 174,
+   "dr_weight": 62,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 2970,
+   "name": "Yiling Song",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2001,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 3
+   },
+   "podium_total": 5,
+   "win_total": 3,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2970",
+   "dr_id": "60398",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=60398",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 309,
+   "name": "Chloé Graftiaux",
+   "sex": "female",
+   "country": "BEL",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 4
+   },
+   "wins": {
+    "boulder": 2
+   },
+   "podium_total": 4,
+   "win_total": 2,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/309",
+   "dr_id": "5259",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5259",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2010-07-30"
+  },
+  {
+   "ifsc_id": 1768,
+   "name": "Megan Mascarenas",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 4
+   },
+   "wins": {
+    "boulder": 2
+   },
+   "podium_total": 4,
+   "win_total": 2,
+   "first_podium_year": 2015,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1768",
+   "dr_id": "12027",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12027",
+   "dr_height": 162,
+   "dr_weight": 48,
+   "dr_last_competition": "2017-06-09"
+  },
+  {
+   "ifsc_id": 1161,
+   "name": "Mia Krampl",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1,
+    "lead": 2,
+    "combined": 1
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2022,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1161",
+   "dr_id": "13209",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13209",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 40,
+   "name": "Natalia Titova",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1978,
+   "group": "speed",
+   "podiums": {
+    "speed": 4
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2012,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/40",
+   "dr_id": "1304",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=1304",
+   "dr_height": 172,
+   "dr_weight": 53,
+   "dr_last_competition": "2015-07-03"
+  },
+  {
+   "ifsc_id": 947,
+   "name": "Camilla Moroni",
+   "sex": "female",
+   "country": "ITA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 157,
+   "arm_span": 161,
+   "ifsc_url": "https://ifsc.results.info/athlete/947",
+   "dr_id": "13556",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13556",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-09-20"
+  },
+  {
+   "ifsc_id": 2941,
+   "name": "Di Niu",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 1996,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2023,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2941",
+   "dr_id": "10611",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10611",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 129,
+   "name": "Elizaveta Ivanova",
+   "sex": "female",
+   "country": "AIN",
+   "birth_year": 1999,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2019,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/129",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3113,
+   "name": "Hannah Meul",
+   "sex": "female",
+   "country": "GER",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2023,
+   "height": 167,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3113",
+   "dr_id": "52839",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=52839",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2022-10-01"
+  },
+  {
+   "ifsc_id": 1222,
+   "name": "Katharina Posch",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "lead": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1222",
+   "dr_id": "8896",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8896",
+   "dr_height": 169,
+   "dr_weight": 55,
+   "dr_last_competition": "2019-08-11"
+  },
+  {
+   "ifsc_id": 11621,
+   "name": "Naïlé Meignan",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11621",
+   "dr_id": "64975",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=64975",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-09-20"
+  },
+  {
+   "ifsc_id": 14415,
+   "name": "Shaoqin Zhang",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 1999,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 3,
+   "win_total": 2,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 161,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/14415",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1153,
+   "name": "Vita Lukan",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "lead": 3
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2021,
+   "last_podium_year": 2023,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1153",
+   "dr_id": "12597",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12597",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-09-05"
+  },
+  {
+   "ifsc_id": 13611,
+   "name": "Yafei Zhou",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2004,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 155,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13611",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 13596,
+   "name": "Zhilu Luo",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2006,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2024,
+   "height": 160,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13596",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 4755,
+   "name": "Alex Johnson",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4755",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1493,
+   "name": "Alla Marenych",
+   "sex": "female",
+   "country": "UKR",
+   "birth_year": 1988,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2016,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1493",
+   "dr_id": "11299",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11299",
+   "dr_height": 167,
+   "dr_weight": 56,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 12297,
+   "name": "Anon Matsufuji",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2025,
+   "height": 160,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/12297",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 438,
+   "name": "Caroline Ciavaldini",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1985,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/438",
+   "dr_id": "5183",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5183",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2011-11-26"
+  },
+  {
+   "ifsc_id": 445,
+   "name": "Charlotte Durif",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/445",
+   "dr_id": "6513",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6513",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-09-14"
+  },
+  {
+   "ifsc_id": 117,
+   "name": "Elena Timofeeva",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1996,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/117",
+   "dr_id": "11059",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11059",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-07-11"
+  },
+  {
+   "ifsc_id": 1400,
+   "name": "Eliska Adamovska",
+   "sex": "female",
+   "country": "CZE",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2021,
+   "last_podium_year": 2023,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1400",
+   "dr_id": "13234",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13234",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 458,
+   "name": "Esther Bruckner",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/458",
+   "dr_id": "9530",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9530",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-05-03"
+  },
+  {
+   "ifsc_id": 2278,
+   "name": "Mei Kotake",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 155,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2278",
+   "dr_id": "10620",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10620",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2381,
+   "name": "Natsuki Tanii",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2023,
+   "height": 152,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2381",
+   "dr_id": "66824",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=66824",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2857,
+   "name": "Patrycja Chudziak",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 1997,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2014,
+   "last_podium_year": 2021,
+   "height": 168,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2857",
+   "dr_id": "10396",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10396",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 3246,
+   "name": "Petra Klingler",
+   "sex": "female",
+   "country": "SUI",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {
+    "boulder": 2
+   },
+   "podium_total": 2,
+   "win_total": 2,
+   "first_podium_year": 2015,
+   "last_podium_year": 2016,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3246",
+   "dr_id": "6367",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6367",
+   "dr_height": 163,
+   "dr_weight": 59,
+   "dr_last_competition": "2021-06-05"
+  },
+  {
+   "ifsc_id": 3311,
+   "name": "Rajiah Sallsabillah",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 1999,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2023,
+   "last_podium_year": 2024,
+   "height": 153,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3311",
+   "dr_id": "61232",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=61232",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 4738,
+   "name": "Sara Morandi",
+   "sex": "female",
+   "country": "ITA",
+   "birth_year": null,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4738",
+   "dr_id": "6137",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6137",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2012-07-28"
+  },
+  {
+   "ifsc_id": 511,
+   "name": "Victoire Andrier",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1996,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2023,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/511",
+   "dr_id": "12065",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12065",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 620,
+   "name": "Zélia Avezou",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 157,
+   "arm_span": 156,
+   "ifsc_url": "https://ifsc.results.info/athlete/620",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 15069,
+   "name": "Adi Asih Kadek",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 2006,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 157,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/15069",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11653,
+   "name": "Agathe Calliet",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 158,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11653",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11464,
+   "name": "Aleksandra Totkova",
+   "sex": "female",
+   "country": "BUL",
+   "birth_year": 2005,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2021,
+   "height": 156,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11464",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3254,
+   "name": "Andrea Kümin",
+   "sex": "female",
+   "country": "SUI",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2022,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3254",
+   "dr_id": "10328",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10328",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2022-11-12"
+  },
+  {
+   "ifsc_id": 2855,
+   "name": "Anna Brozek",
+   "sex": "female",
+   "country": "POL",
+   "birth_year": 1995,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2855",
+   "dr_id": "10384",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10384",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 4761,
+   "name": "Anna Gallyamova",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4761",
+   "dr_id": "5146",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5146",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2015-05-14"
+  },
+  {
+   "ifsc_id": 3426,
+   "name": "Anne-Sophie Koller",
+   "sex": "female",
+   "country": "SUI",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": 160,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3426",
+   "dr_id": "9979",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9979",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2021-08-14"
+  },
+  {
+   "ifsc_id": 1812,
+   "name": "Ashima Shiraishi",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": 155,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1812",
+   "dr_id": "13960",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13960",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 68,
+   "name": "Dinara Fakhritdinova",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2012,
+   "last_podium_year": 2012,
+   "height": 152,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/68",
+   "dr_id": "7576",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7576",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-10-27"
+  },
+  {
+   "ifsc_id": 137,
+   "name": "Ekaterina Barashchuk",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1999,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2021,
+   "last_podium_year": 2021,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/137",
+   "dr_id": "12333",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12333",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 55,
+   "name": "Ekaterina Kipriianova",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/55",
+   "dr_id": "6078",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6078",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 510,
+   "name": "Elma Fleuret",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1999,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2016,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/510",
+   "dr_id": "12064",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12064",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-08-09"
+  },
+  {
+   "ifsc_id": 3465,
+   "name": "Elnaz Rekabi",
+   "sex": "female",
+   "country": "IRI",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "combined": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2021,
+   "height": 161,
+   "arm_span": 158,
+   "ifsc_url": "https://ifsc.results.info/athlete/3465",
+   "dr_id": "8812",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8812",
+   "dr_height": null,
+   "dr_weight": 50,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 553,
+   "name": "Flavy Cohaut",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 174,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/553",
+   "dr_id": "58626",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=58626",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-09-20"
+  },
+  {
+   "ifsc_id": 1232,
+   "name": "Hannah Schubert",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1232",
+   "dr_id": "10385",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10385",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 12653,
+   "name": "Jennifer Eucharia Buckley",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 2007,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 169,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/12653",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 466,
+   "name": "Julia Chanourdie",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/466",
+   "dr_id": "9984",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9984",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1209,
+   "name": "Katharina Saurwein",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1209",
+   "dr_id": "5244",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5244",
+   "dr_height": 160,
+   "dr_weight": 52,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 63,
+   "name": "Kseniya Polekhina",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2013,
+   "last_podium_year": 2013,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/63",
+   "dr_id": "7235",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7235",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-09-08"
+  },
+  {
+   "ifsc_id": 1160,
+   "name": "Lucka Rakovec",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": 169,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1160",
+   "dr_id": "13208",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13208",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 462,
+   "name": "Manon Hily",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 154,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/462",
+   "dr_id": "9756",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9756",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-07-19"
+  },
+  {
+   "ifsc_id": 2327,
+   "name": "Mao Nakamura",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 156,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2327",
+   "dr_id": "14002",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=14002",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 4916,
+   "name": "Mathilde Brumagne",
+   "sex": "female",
+   "country": "BEL",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4916",
+   "dr_id": "6076",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6076",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-07-10"
+  },
+  {
+   "ifsc_id": 1266,
+   "name": "Mattea Pötzi",
+   "sex": "female",
+   "country": "AUT",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 161,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1266",
+   "dr_id": "12930",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12930",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 443,
+   "name": "Mélanie Sandoz",
+   "sex": "female",
+   "country": "FRA",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/443",
+   "dr_id": "6220",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6220",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-08-17"
+  },
+  {
+   "ifsc_id": 1765,
+   "name": "Melina Costanza",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 1999,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 167,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1765",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 14008,
+   "name": "Melody Sekikawa",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 2007,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 161,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/14008",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 642,
+   "name": "Molly Thompson-Smith",
+   "sex": "female",
+   "country": "GBR",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": 157,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/642",
+   "dr_id": "10489",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10489",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2013,
+   "name": "Monika Retschy",
+   "sex": "female",
+   "country": "GER",
+   "birth_year": 1991,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2016,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2013",
+   "dr_id": "7641",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7641",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2017-08-18"
+  },
+  {
+   "ifsc_id": 1119,
+   "name": "Natalija Gros",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 1984,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1119",
+   "dr_id": "2755",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=2755",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2011-07-15"
+  },
+  {
+   "ifsc_id": 13041,
+   "name": "Nonoha Kume",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 161,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13041",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3290,
+   "name": "Nurul Iqamah",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 1995,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3290",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2501,
+   "name": "Oceania Mackenzie",
+   "sex": "female",
+   "country": "AUS",
+   "birth_year": 2002,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 173,
+   "arm_span": 172,
+   "ifsc_url": "https://ifsc.results.info/athlete/2501",
+   "dr_id": "11895",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11895",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 1468,
+   "name": "Olena Ryepko",
+   "sex": "female",
+   "country": "UKR",
+   "birth_year": 1975,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1468",
+   "dr_id": "1105",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=1105",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2011-07-15"
+  },
+  {
+   "ifsc_id": 4736,
+   "name": "Olga Evstigneeva",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": null,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4736",
+   "dr_id": "5144",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5144",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2010-08-20"
+  },
+  {
+   "ifsc_id": 44,
+   "name": "Olga Iakovleva",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1983,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2012,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/44",
+   "dr_id": "2807",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=2807",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-09-14"
+  },
+  {
+   "ifsc_id": 4756,
+   "name": "Olga Shalagina",
+   "sex": "female",
+   "country": "UKR",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4756",
+   "dr_id": "3268",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3268",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-08-21"
+  },
+  {
+   "ifsc_id": 3279,
+   "name": "Puji Lestari",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3279",
+   "dr_id": "11510",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11510",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-11-07"
+  },
+  {
+   "ifsc_id": 13329,
+   "name": "Rosa Rekar",
+   "sex": "female",
+   "country": "SLO",
+   "birth_year": 2005,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13329",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3302,
+   "name": "Sari Agustina",
+   "sex": "female",
+   "country": "INA",
+   "birth_year": 1997,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3302",
+   "dr_id": "14475",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=14475",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-11-07"
+  },
+  {
+   "ifsc_id": 1712,
+   "name": "Sasha Digiulian",
+   "sex": "female",
+   "country": "USA",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1712",
+   "dr_id": "7939",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7939",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-07-09"
+  },
+  {
+   "ifsc_id": 13606,
+   "name": "Shengyan Wang",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13606",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 15167,
+   "name": "Shixue Meng",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2007,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/15167",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2047,
+   "name": "Sol Sa",
+   "sex": "female",
+   "country": "KOR",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "combined": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2047",
+   "dr_id": "9266",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9266",
+   "dr_height": 164,
+   "dr_weight": 51,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 3357,
+   "name": "Tamara Ulzhabayeva",
+   "sex": "female",
+   "country": "KAZ",
+   "birth_year": 1987,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": 167,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3357",
+   "dr_id": "5151",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5151",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 45,
+   "name": "Valentina Yurina",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1985,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/45",
+   "dr_id": "3316",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3316",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2012-07-28"
+  },
+  {
+   "ifsc_id": 2933,
+   "name": "Xuhua Pan",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 1989,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2933",
+   "dr_id": "8787",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8787",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-05-12"
+  },
+  {
+   "ifsc_id": 58,
+   "name": "Yana Chereshneva",
+   "sex": "female",
+   "country": "RUS",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/58",
+   "dr_id": "6324",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6324",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-09-08"
+  },
+  {
+   "ifsc_id": 3009,
+   "name": "Yuetong Zhang",
+   "sex": "female",
+   "country": "CHN",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": 160,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3009",
+   "dr_id": "69147",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=69147",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 2251,
+   "name": "Yuka Kobayashi",
+   "sex": "female",
+   "country": "JPN",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2251",
+   "dr_id": "5254",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5254",
+   "dr_height": 156,
+   "dr_weight": null,
+   "dr_last_competition": "2016-11-26"
+  },
+  {
+   "ifsc_id": 1214,
+   "name": "Jakob Schubert",
+   "sex": "male",
+   "country": "AUT",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "lead": 58,
+    "boulder": 12,
+    "combined": 5,
+    "boulder_lead": 2
+   },
+   "wins": {
+    "lead": 24,
+    "boulder": 3,
+    "combined": 1,
+    "boulder_lead": 1
+   },
+   "podium_total": 77,
+   "win_total": 29,
+   "first_podium_year": 2010,
+   "last_podium_year": 2024,
+   "height": 176,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1214",
+   "dr_id": "6550",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6550",
+   "dr_height": 175,
+   "dr_weight": 64,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 1364,
+   "name": "Adam Ondra",
+   "sex": "male",
+   "country": "CZE",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 17,
+    "lead": 25,
+    "combined": 2
+   },
+   "wins": {
+    "boulder": 7,
+    "lead": 15
+   },
+   "podium_total": 44,
+   "win_total": 22,
+   "first_podium_year": 2010,
+   "last_podium_year": 2023,
+   "height": 186,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1364",
+   "dr_id": "8372",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8372",
+   "dr_height": 185,
+   "dr_weight": 67,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 2276,
+   "name": "Tomoa Narasaki",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 29,
+    "lead": 4,
+    "combined": 3,
+    "boulder_lead": 2
+   },
+   "wins": {
+    "boulder": 9,
+    "combined": 2,
+    "boulder_lead": 1
+   },
+   "podium_total": 38,
+   "win_total": 12,
+   "first_podium_year": 2016,
+   "last_podium_year": 2025,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2276",
+   "dr_id": "10618",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10618",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 1559,
+   "name": "Sean Mccoll",
+   "sex": "male",
+   "country": "CAN",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 12,
+    "lead": 19
+   },
+   "wins": {
+    "lead": 3,
+    "boulder": 2
+   },
+   "podium_total": 31,
+   "win_total": 5,
+   "first_podium_year": 2010,
+   "last_podium_year": 2018,
+   "height": 169,
+   "arm_span": 175,
+   "ifsc_url": "https://ifsc.results.info/athlete/1559",
+   "dr_id": "5089",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5089",
+   "dr_height": 169,
+   "dr_weight": 60,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2254,
+   "name": "Sachi Amma",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "lead": 25
+   },
+   "wins": {
+    "lead": 7
+   },
+   "podium_total": 25,
+   "win_total": 7,
+   "first_podium_year": 2010,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2254",
+   "dr_id": "7225",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7225",
+   "dr_height": 173,
+   "dr_weight": 52,
+   "dr_last_competition": "2015-11-14"
+  },
+  {
+   "ifsc_id": 13040,
+   "name": "Sorato Anraku",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2006,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 12,
+    "lead": 11,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 6,
+    "lead": 7
+   },
+   "podium_total": 24,
+   "win_total": 13,
+   "first_podium_year": 2023,
+   "last_podium_year": 2025,
+   "height": 168,
+   "arm_span": 181,
+   "ifsc_url": "https://ifsc.results.info/athlete/13040",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1359,
+   "name": "Libor Hroza",
+   "sex": "male",
+   "country": "CZE",
+   "birth_year": 1987,
+   "group": "speed",
+   "podiums": {
+    "speed": 23
+   },
+   "wins": {
+    "speed": 4
+   },
+   "podium_total": 23,
+   "win_total": 4,
+   "first_podium_year": 2010,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1359",
+   "dr_id": "5651",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5651",
+   "dr_height": 188,
+   "dr_weight": 81,
+   "dr_last_competition": "2017-08-25"
+  },
+  {
+   "ifsc_id": 773,
+   "name": "Ramón Julian Puigblanque",
+   "sex": "male",
+   "country": "ESP",
+   "birth_year": 1981,
+   "group": "climbing",
+   "podiums": {
+    "lead": 23
+   },
+   "wins": {
+    "lead": 12
+   },
+   "podium_total": 23,
+   "win_total": 12,
+   "first_podium_year": 2010,
+   "last_podium_year": 2015,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/773",
+   "dr_id": "3521",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3521",
+   "dr_height": 158,
+   "dr_weight": 48,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 2929,
+   "name": "Qixin Zhong",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 1989,
+   "group": "speed",
+   "podiums": {
+    "speed": 22
+   },
+   "wins": {
+    "speed": 13
+   },
+   "podium_total": 22,
+   "win_total": 13,
+   "first_podium_year": 2010,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2929",
+   "dr_id": "7994",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7994",
+   "dr_height": 170,
+   "dr_weight": 68,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 74,
+   "name": "Stanislav Kokorin",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 22
+   },
+   "wins": {
+    "speed": 9
+   },
+   "podium_total": 22,
+   "win_total": 9,
+   "first_podium_year": 2010,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/74",
+   "dr_id": "8560",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8560",
+   "dr_height": 172,
+   "dr_weight": 67,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 1480,
+   "name": "Danyil Boldyrev",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": 1992,
+   "group": "speed",
+   "podiums": {
+    "speed": 21
+   },
+   "wins": {
+    "speed": 7
+   },
+   "podium_total": 21,
+   "win_total": 7,
+   "first_podium_year": 2011,
+   "last_podium_year": 2021,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1480",
+   "dr_id": "7964",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7964",
+   "dr_height": 190,
+   "dr_weight": 78,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 53,
+   "name": "Dmitrii Sharafutdinov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1986,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 20
+   },
+   "wins": {
+    "boulder": 10
+   },
+   "podium_total": 20,
+   "win_total": 10,
+   "first_podium_year": 2010,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/53",
+   "dr_id": "5781",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5781",
+   "dr_height": 178,
+   "dr_weight": 60,
+   "dr_last_competition": "2019-04-12"
+  },
+  {
+   "ifsc_id": 1204,
+   "name": "Kilian Fischhuber",
+   "sex": "male",
+   "country": "AUT",
+   "birth_year": 1983,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 20
+   },
+   "wins": {
+    "boulder": 11
+   },
+   "podium_total": 20,
+   "win_total": 11,
+   "first_podium_year": 2010,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1204",
+   "dr_id": "2602",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=2602",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-08-21"
+  },
+  {
+   "ifsc_id": 3471,
+   "name": "Reza Alipour Shenazandifard",
+   "sex": "male",
+   "country": "IRI",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 17
+   },
+   "wins": {
+    "speed": 7
+   },
+   "podium_total": 17,
+   "win_total": 7,
+   "first_podium_year": 2013,
+   "last_podium_year": 2018,
+   "height": 171,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3471",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 437,
+   "name": "Romain Desgranges",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1982,
+   "group": "climbing",
+   "podiums": {
+    "lead": 16
+   },
+   "wins": {
+    "lead": 6
+   },
+   "podium_total": 16,
+   "win_total": 6,
+   "first_podium_year": 2011,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/437",
+   "dr_id": "3554",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3554",
+   "dr_height": 174,
+   "dr_weight": 57,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 60,
+   "name": "Rustam Gelmanov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 16
+   },
+   "wins": {
+    "boulder": 4
+   },
+   "podium_total": 16,
+   "win_total": 4,
+   "first_podium_year": 2011,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/60",
+   "dr_id": "6933",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6933",
+   "dr_height": 167,
+   "dr_weight": 51,
+   "dr_last_competition": "2018-07-20"
+  },
+  {
+   "ifsc_id": 1129,
+   "name": "Domen Skofic",
+   "sex": "male",
+   "country": "SLO",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "lead": 15
+   },
+   "wins": {
+    "lead": 5
+   },
+   "podium_total": 15,
+   "win_total": 5,
+   "first_podium_year": 2014,
+   "last_podium_year": 2020,
+   "height": 177,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1129",
+   "dr_id": "8958",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8958",
+   "dr_height": 176,
+   "dr_weight": 62,
+   "dr_last_competition": "2019-08-11"
+  },
+  {
+   "ifsc_id": 855,
+   "name": "Stefano Ghisolfi",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "lead": 15
+   },
+   "wins": {
+    "lead": 6
+   },
+   "podium_total": 15,
+   "win_total": 6,
+   "first_podium_year": 2012,
+   "last_podium_year": 2021,
+   "height": 169,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/855",
+   "dr_id": "8323",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8323",
+   "dr_height": 170,
+   "dr_weight": 57,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 79,
+   "name": "Aleksey Rubtsov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1988,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 14
+   },
+   "wins": {
+    "boulder": 3
+   },
+   "podium_total": 14,
+   "win_total": 3,
+   "first_podium_year": 2010,
+   "last_podium_year": 2018,
+   "height": 178,
+   "arm_span": 185,
+   "ifsc_url": "https://ifsc.results.info/athlete/79",
+   "dr_id": "9046",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9046",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 3422,
+   "name": "Jan Hojer",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 13,
+    "combined": 1
+   },
+   "wins": {
+    "boulder": 6
+   },
+   "podium_total": 14,
+   "win_total": 6,
+   "first_podium_year": 2012,
+   "last_podium_year": 2019,
+   "height": 188,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3422",
+   "dr_id": "6623",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6623",
+   "dr_height": 188,
+   "dr_weight": 77,
+   "dr_last_competition": "2023-07-07"
+  },
+  {
+   "ifsc_id": 2574,
+   "name": "Alexander Megos",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "lead": 13
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 13,
+   "win_total": 1,
+   "first_podium_year": 2017,
+   "last_podium_year": 2024,
+   "height": 175,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2574",
+   "dr_id": "9058",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9058",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-18"
+  },
+  {
+   "ifsc_id": 3324,
+   "name": "Kiromal Katibin",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 13
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 13,
+   "win_total": 2,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3324",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11490,
+   "name": "Toby Roberts",
+   "sex": "male",
+   "country": "GBR",
+   "birth_year": 2005,
+   "group": "climbing",
+   "podiums": {
+    "lead": 8,
+    "boulder": 4,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 2,
+    "lead": 3,
+    "boulder_lead": 1
+   },
+   "podium_total": 13,
+   "win_total": 6,
+   "first_podium_year": 2022,
+   "last_podium_year": 2025,
+   "height": 177,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11490",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 7613,
+   "name": "Bassa Mawem",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1984,
+   "group": "speed",
+   "podiums": {
+    "speed": 12
+   },
+   "wins": {
+    "speed": 3
+   },
+   "podium_total": 12,
+   "win_total": 3,
+   "first_podium_year": 2014,
+   "last_podium_year": 2019,
+   "height": 183,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/7613",
+   "dr_id": "6",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6",
+   "dr_height": 184,
+   "dr_weight": 77,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 2101,
+   "name": "Dohyun Lee",
+   "sex": "male",
+   "country": "KOR",
+   "birth_year": 2002,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 9,
+    "lead": 3
+   },
+   "wins": {
+    "boulder": 3,
+    "lead": 2
+   },
+   "podium_total": 12,
+   "win_total": 5,
+   "first_podium_year": 2022,
+   "last_podium_year": 2025,
+   "height": 176,
+   "arm_span": 182,
+   "ifsc_url": "https://ifsc.results.info/athlete/2101",
+   "dr_id": "61144",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=61144",
+   "dr_height": 166,
+   "dr_weight": 46,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2052,
+   "name": "Jongwon Chon",
+   "sex": "male",
+   "country": "KOR",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 12
+   },
+   "wins": {
+    "boulder": 5
+   },
+   "podium_total": 12,
+   "win_total": 5,
+   "first_podium_year": 2015,
+   "last_podium_year": 2023,
+   "height": 177,
+   "arm_span": 183,
+   "ifsc_url": "https://ifsc.results.info/athlete/2052",
+   "dr_id": "11183",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11183",
+   "dr_height": 176,
+   "dr_weight": 57,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 2309,
+   "name": "Yoshiyuki Ogata",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1998,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 11,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 3
+   },
+   "podium_total": 12,
+   "win_total": 3,
+   "first_podium_year": 2017,
+   "last_podium_year": 2023,
+   "height": 172,
+   "arm_span": 181,
+   "ifsc_url": "https://ifsc.results.info/athlete/2309",
+   "dr_id": "12501",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12501",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 56,
+   "name": "Evgenii Vaitsekhovskii",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1986,
+   "group": "speed",
+   "podiums": {
+    "speed": 11
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 11,
+   "win_total": 2,
+   "first_podium_year": 2010,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/56",
+   "dr_id": "6132",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6132",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-07-15"
+  },
+  {
+   "ifsc_id": 2272,
+   "name": "Kokoro Fujii",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 10,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 6
+   },
+   "podium_total": 11,
+   "win_total": 6,
+   "first_podium_year": 2016,
+   "last_podium_year": 2022,
+   "height": 176,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2272",
+   "dr_id": "10172",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10172",
+   "dr_height": 175,
+   "dr_weight": 65,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 2845,
+   "name": "Marcin Dzienski",
+   "sex": "male",
+   "country": "POL",
+   "birth_year": 1993,
+   "group": "speed",
+   "podiums": {
+    "speed": 11
+   },
+   "wins": {
+    "speed": 5
+   },
+   "podium_total": 11,
+   "win_total": 5,
+   "first_podium_year": 2014,
+   "last_podium_year": 2021,
+   "height": 166,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2845",
+   "dr_id": "8525",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8525",
+   "dr_height": 166,
+   "dr_weight": 64,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 11675,
+   "name": "Mejdi Schalck",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 11
+   },
+   "wins": {
+    "boulder": 4
+   },
+   "podium_total": 11,
+   "win_total": 4,
+   "first_podium_year": 2021,
+   "last_podium_year": 2025,
+   "height": 174,
+   "arm_span": 184,
+   "ifsc_url": "https://ifsc.results.info/athlete/11675",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 811,
+   "name": "Alberto Ginés López",
+   "sex": "male",
+   "country": "ESP",
+   "birth_year": 2002,
+   "group": "climbing",
+   "podiums": {
+    "lead": 9,
+    "combined": 1
+   },
+   "wins": {
+    "combined": 1
+   },
+   "podium_total": 10,
+   "win_total": 1,
+   "first_podium_year": 2019,
+   "last_podium_year": 2025,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/811",
+   "dr_id": "56609",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=56609",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 98,
+   "name": "Vladislav Deulin",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 10
+   },
+   "wins": {
+    "speed": 3
+   },
+   "podium_total": 10,
+   "win_total": 3,
+   "first_podium_year": 2016,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/98",
+   "dr_id": "10613",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10613",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 105,
+   "name": "Dmitrii Timofeev",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1993,
+   "group": "speed",
+   "podiums": {
+    "speed": 9
+   },
+   "wins": {
+    "speed": 4
+   },
+   "podium_total": 9,
+   "win_total": 4,
+   "first_podium_year": 2012,
+   "last_podium_year": 2021,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/105",
+   "dr_id": "10851",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10851",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 436,
+   "name": "Guillaume Glairon Mondet",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1986,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 9
+   },
+   "wins": {
+    "boulder": 3
+   },
+   "podium_total": 9,
+   "win_total": 3,
+   "first_podium_year": 2011,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/436",
+   "dr_id": "3500",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3500",
+   "dr_height": 178,
+   "dr_weight": 62,
+   "dr_last_competition": "2018-08-17"
+  },
+  {
+   "ifsc_id": 3340,
+   "name": "Veddriq Leonardo",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 1997,
+   "group": "speed",
+   "podiums": {
+    "speed": 9
+   },
+   "wins": {
+    "speed": 7
+   },
+   "podium_total": 9,
+   "win_total": 7,
+   "first_podium_year": 2018,
+   "last_podium_year": 2024,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3340",
+   "dr_id": "71110",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=71110",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 3278,
+   "name": "Aspar Aspar",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 1992,
+   "group": "speed",
+   "podiums": {
+    "speed": 8
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 8,
+   "win_total": 2,
+   "first_podium_year": 2017,
+   "last_podium_year": 2022,
+   "height": 165,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3278",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3577,
+   "name": "Jorg Verhoeven",
+   "sex": "male",
+   "country": "NED",
+   "birth_year": 1985,
+   "group": "climbing",
+   "podiums": {
+    "lead": 3,
+    "boulder": 5
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 8,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3577",
+   "dr_id": "3115",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3115",
+   "dr_height": 181,
+   "dr_weight": 68,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 13034,
+   "name": "Samuel Watson",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 2006,
+   "group": "speed",
+   "podiums": {
+    "speed": 8
+   },
+   "wins": {
+    "speed": 5
+   },
+   "podium_total": 8,
+   "win_total": 5,
+   "first_podium_year": 2022,
+   "last_podium_year": 2025,
+   "height": 181,
+   "arm_span": 180,
+   "ifsc_url": "https://ifsc.results.info/athlete/13034",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2370,
+   "name": "Taisei Homma",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1999,
+   "group": "climbing",
+   "podiums": {
+    "lead": 8
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 8,
+   "win_total": 1,
+   "first_podium_year": 2019,
+   "last_podium_year": 2025,
+   "height": 177,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2370",
+   "dr_id": "61376",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=61376",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 444,
+   "name": "Gautier Supper",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "lead": 7
+   },
+   "wins": {
+    "lead": 2
+   },
+   "podium_total": 7,
+   "win_total": 2,
+   "first_podium_year": 2010,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/444",
+   "dr_id": "6498",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6498",
+   "dr_height": 178,
+   "dr_weight": 64,
+   "dr_last_competition": "2018-07-06"
+  },
+  {
+   "ifsc_id": 1124,
+   "name": "Jernej Kruder",
+   "sex": "male",
+   "country": "SLO",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 7
+   },
+   "wins": {
+    "boulder": 2
+   },
+   "podium_total": 7,
+   "win_total": 2,
+   "first_podium_year": 2014,
+   "last_podium_year": 2019,
+   "height": 179,
+   "arm_span": 184,
+   "ifsc_url": "https://ifsc.results.info/athlete/1124",
+   "dr_id": "6488",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6488",
+   "dr_height": 180,
+   "dr_weight": 71,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 865,
+   "name": "Ludovico Fossali",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1997,
+   "group": "speed",
+   "podiums": {
+    "speed": 7
+   },
+   "wins": {
+    "speed": 3
+   },
+   "podium_total": 7,
+   "win_total": 3,
+   "first_podium_year": 2017,
+   "last_podium_year": 2024,
+   "height": 185,
+   "arm_span": 196,
+   "ifsc_url": "https://ifsc.results.info/athlete/865",
+   "dr_id": "10596",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10596",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 1929,
+   "name": "Colin Duffy",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "lead": 4,
+    "boulder": 1,
+    "boulder_lead": 1
+   },
+   "wins": {
+    "boulder": 1,
+    "lead": 2
+   },
+   "podium_total": 6,
+   "win_total": 3,
+   "first_podium_year": 2021,
+   "last_podium_year": 2024,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1929",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 48,
+   "name": "Sergei Sinitcyn",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1983,
+   "group": "speed",
+   "podiums": {
+    "speed": 6
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 6,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/48",
+   "dr_id": "5141",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5141",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-06-20"
+  },
+  {
+   "ifsc_id": 109,
+   "name": "Aleksandr Shikov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1997,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 3
+   },
+   "podium_total": 5,
+   "win_total": 3,
+   "first_podium_year": 2016,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/109",
+   "dr_id": "10856",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10856",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 11701,
+   "name": "Erik Noya Cardona",
+   "sex": "male",
+   "country": "ESP",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {},
+   "podium_total": 5,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2024,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11701",
+   "dr_id": "79287",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=79287",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-07-11"
+  },
+  {
+   "ifsc_id": 2039,
+   "name": "Hyunbin Min",
+   "sex": "male",
+   "country": "KOR",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "lead": 5
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2018,
+   "height": 162,
+   "arm_span": 167,
+   "ifsc_url": "https://ifsc.results.info/athlete/2039",
+   "dr_id": "7229",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7229",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-10-27"
+  },
+  {
+   "ifsc_id": 1749,
+   "name": "Jesse Grupper",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "lead": 5
+   },
+   "wins": {
+    "lead": 2
+   },
+   "podium_total": 5,
+   "win_total": 2,
+   "first_podium_year": 2022,
+   "last_podium_year": 2023,
+   "height": 180,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1749",
+   "dr_id": "11373",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11373",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 11395,
+   "name": "Jianguo Long",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2003,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 4
+   },
+   "podium_total": 5,
+   "win_total": 4,
+   "first_podium_year": 2022,
+   "last_podium_year": 2025,
+   "height": 174,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11395",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11460,
+   "name": "Jinbao Long",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2022,
+   "last_podium_year": 2023,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11460",
+   "dr_id": "77860",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=77860",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 2307,
+   "name": "Meichi Narasaki",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1999,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 5
+   },
+   "wins": {},
+   "podium_total": 5,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2025,
+   "height": 188,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2307",
+   "dr_id": "12432",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12432",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 13598,
+   "name": "Peng Wu",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2002,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 5,
+   "win_total": 2,
+   "first_podium_year": 2022,
+   "last_podium_year": 2024,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13598",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2257,
+   "name": "Rei Sugimoto",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1991,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 5
+   },
+   "wins": {
+    "boulder": 2
+   },
+   "podium_total": 5,
+   "win_total": 2,
+   "first_podium_year": 2013,
+   "last_podium_year": 2019,
+   "height": 172,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2257",
+   "dr_id": "7465",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7465",
+   "dr_height": 170,
+   "dr_weight": 63,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 11381,
+   "name": "Ryo Omasa",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2002,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {},
+   "podium_total": 5,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2025,
+   "height": 167,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11381",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11390,
+   "name": "Satone Yoshida",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "lead": 5
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2023,
+   "last_podium_year": 2025,
+   "height": 168,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11390",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1741,
+   "name": "Sean Bailey",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "lead": 3
+   },
+   "wins": {
+    "boulder": 1,
+    "lead": 2
+   },
+   "podium_total": 5,
+   "win_total": 3,
+   "first_podium_year": 2018,
+   "last_podium_year": 2022,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1741",
+   "dr_id": "10775",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10775",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 64,
+   "name": "Sergey Abdrakhmanov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 3
+   },
+   "podium_total": 5,
+   "win_total": 3,
+   "first_podium_year": 2010,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/64",
+   "dr_id": "7245",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7245",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2012-10-20"
+  },
+  {
+   "ifsc_id": 2255,
+   "name": "Tsukuru Hori",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 5
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2015,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2255",
+   "dr_id": "7226",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7226",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-06-02"
+  },
+  {
+   "ifsc_id": 1483,
+   "name": "Yaroslav Gontaryk",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": 1993,
+   "group": "speed",
+   "podiums": {
+    "speed": 5
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 5,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2013,
+   "height": 166,
+   "arm_span": 165,
+   "ifsc_url": "https://ifsc.results.info/athlete/1483",
+   "dr_id": "9039",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9039",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 3129,
+   "name": "Cédric Lachat",
+   "sex": "male",
+   "country": "SUI",
+   "birth_year": 1984,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "lead": 2
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2013,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3129",
+   "dr_id": "2583",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=2583",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2015-06-24"
+  },
+  {
+   "ifsc_id": 93,
+   "name": "Dmitrii Fakirianov",
+   "sex": "male",
+   "country": "AIN",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "lead": 4
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2016,
+   "last_podium_year": 2021,
+   "height": 167,
+   "arm_span": 176,
+   "ifsc_url": "https://ifsc.results.info/athlete/93",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1131,
+   "name": "Gregor Vezonik",
+   "sex": "male",
+   "country": "SLO",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 4
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 4,
+   "win_total": 1,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": 176,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1131",
+   "dr_id": "9787",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9787",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-11"
+  },
+  {
+   "ifsc_id": 2332,
+   "name": "Kai Harada",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1999,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "combined": 1,
+    "lead": 1
+   },
+   "wins": {
+    "boulder": 1,
+    "combined": 1
+   },
+   "podium_total": 4,
+   "win_total": 2,
+   "first_podium_year": 2018,
+   "last_podium_year": 2019,
+   "height": 169,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2332",
+   "dr_id": "14023",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=14023",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 1170,
+   "name": "Luka Potocar",
+   "sex": "male",
+   "country": "SLO",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "lead": 4
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 4,
+   "win_total": 1,
+   "first_podium_year": 2021,
+   "last_podium_year": 2022,
+   "height": 177,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1170",
+   "dr_id": "57874",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=57874",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 490,
+   "name": "Manuel Cornu",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 4
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 4,
+   "win_total": 1,
+   "first_podium_year": 2016,
+   "last_podium_year": 2024,
+   "height": 177,
+   "arm_span": 168,
+   "ifsc_url": "https://ifsc.results.info/athlete/490",
+   "dr_id": "11091",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11091",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 447,
+   "name": "Manuel Romain",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1988,
+   "group": "climbing",
+   "podiums": {
+    "lead": 4
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/447",
+   "dr_id": "7056",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=7056",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-09-08"
+  },
+  {
+   "ifsc_id": 1361,
+   "name": "Martin Stranik",
+   "sex": "male",
+   "country": "CZE",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "lead": 2
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2015,
+   "last_podium_year": 2021,
+   "height": 178,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1361",
+   "dr_id": "6489",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6489",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 532,
+   "name": "Sam Avezou",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 2001,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1,
+    "lead": 3
+   },
+   "wins": {},
+   "podium_total": 4,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2024,
+   "height": 170,
+   "arm_span": 174,
+   "ifsc_url": "https://ifsc.results.info/athlete/532",
+   "dr_id": "13228",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13228",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 4299,
+   "name": "Sascha Lehmann",
+   "sex": "male",
+   "country": "SUI",
+   "birth_year": 1998,
+   "group": "climbing",
+   "podiums": {
+    "lead": 4
+   },
+   "wins": {
+    "lead": 2
+   },
+   "podium_total": 4,
+   "win_total": 2,
+   "first_podium_year": 2019,
+   "last_podium_year": 2023,
+   "height": 164,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4299",
+   "dr_id": "10951",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10951",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2021-09-25"
+  },
+  {
+   "ifsc_id": 3125,
+   "name": "Sebastian Halenke",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "lead": 4
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 4,
+   "win_total": 1,
+   "first_podium_year": 2015,
+   "last_podium_year": 2022,
+   "height": 177,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3125",
+   "dr_id": "9426",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9426",
+   "dr_height": 177,
+   "dr_weight": 65,
+   "dr_last_competition": "2021-10-02"
+  },
+  {
+   "ifsc_id": 14416,
+   "name": "Xinshang Wang",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2005,
+   "group": "speed",
+   "podiums": {
+    "speed": 4
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 4,
+   "win_total": 1,
+   "first_podium_year": 2023,
+   "last_podium_year": 2024,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/14416",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3131,
+   "name": "Yannick Flohé",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1999,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "combined": 1,
+    "lead": 1
+   },
+   "wins": {
+    "combined": 1,
+    "boulder": 1
+   },
+   "podium_total": 4,
+   "win_total": 2,
+   "first_podium_year": 2019,
+   "last_podium_year": 2022,
+   "height": 178,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3131",
+   "dr_id": "12604",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12604",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2024-10-11"
+  },
+  {
+   "ifsc_id": 373,
+   "name": "Hannes Van Duysen",
+   "sex": "male",
+   "country": "BEL",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2025,
+   "height": 173,
+   "arm_span": 180,
+   "ifsc_url": "https://ifsc.results.info/athlete/373",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2273,
+   "name": "Keiichiro Korenaga",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "lead": 3
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2016,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2273",
+   "dr_id": "10173",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10173",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2265,
+   "name": "Keita Watabe",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": 173,
+   "arm_span": 180,
+   "ifsc_url": "https://ifsc.results.info/athlete/2265",
+   "dr_id": "9102",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9102",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-05-18"
+  },
+  {
+   "ifsc_id": 856,
+   "name": "Leonardo Gontero",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1993,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/856",
+   "dr_id": "9436",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9436",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 4745,
+   "name": "Lukasz Swirk",
+   "sex": "male",
+   "country": "POL",
+   "birth_year": null,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4745",
+   "dr_id": "8200",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8200",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-05-03"
+  },
+  {
+   "ifsc_id": 2261,
+   "name": "Masahiro Higuchi",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1992,
+   "group": "climbing",
+   "podiums": {
+    "lead": 3
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2018,
+   "last_podium_year": 2022,
+   "height": 169,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2261",
+   "dr_id": "8608",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8608",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-11-07"
+  },
+  {
+   "ifsc_id": 1778,
+   "name": "Nathaniel Coleman",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2,
+    "combined": 1
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2015,
+   "last_podium_year": 2021,
+   "height": 182,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1778",
+   "dr_id": "12601",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12601",
+   "dr_height": 180,
+   "dr_weight": 70,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 1798,
+   "name": "Noah Bratschi",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2024,
+   "height": 184,
+   "arm_span": 194,
+   "ifsc_url": "https://ifsc.results.info/athlete/1798",
+   "dr_id": "13882",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13882",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 13547,
+   "name": "Raharjati Nursamsa",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 2001,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 3,
+   "win_total": 2,
+   "first_podium_year": 2023,
+   "last_podium_year": 2025,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13547",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11415,
+   "name": "Rahmad Adi Mulyono",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2022,
+   "last_podium_year": 2023,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11415",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3361,
+   "name": "Rishat Khaibullin",
+   "sex": "male",
+   "country": "KAZ",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "combined": 1,
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2025,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3361",
+   "dr_id": "9567",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9567",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 13986,
+   "name": "Shion Omata",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2006,
+   "group": "climbing",
+   "podiums": {
+    "lead": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2024,
+   "height": 162,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13986",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 11871,
+   "name": "Sohta Amagasa",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 3
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2024,
+   "last_podium_year": 2025,
+   "height": 176,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11871",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3124,
+   "name": "Thomas Tauporn",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1991,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1,
+    "boulder": 2
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2013,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3124",
+   "dr_id": "6564",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6564",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-05-28"
+  },
+  {
+   "ifsc_id": 2947,
+   "name": "Yufei Pan",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2,
+    "boulder": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 3,
+   "win_total": 1,
+   "first_podium_year": 2017,
+   "last_podium_year": 2025,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2947",
+   "dr_id": "12940",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12940",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 13592,
+   "name": "Zach Hammer",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 2006,
+   "group": "speed",
+   "podiums": {
+    "speed": 3
+   },
+   "wins": {},
+   "podium_total": 3,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 169,
+   "arm_span": 174,
+   "ifsc_url": "https://ifsc.results.info/athlete/13592",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 486,
+   "name": "Alban Levier",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2015,
+   "last_podium_year": 2015,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/486",
+   "dr_id": "10922",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10922",
+   "dr_height": 170,
+   "dr_weight": 58,
+   "dr_last_competition": "2019-05-18"
+  },
+  {
+   "ifsc_id": 154,
+   "name": "Aleksandr Shilov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1994,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/154",
+   "dr_id": "12994",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12994",
+   "dr_height": 176,
+   "dr_weight": 66,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 3270,
+   "name": "Alfian Muhammad Fajri",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 1997,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {
+    "speed": 2
+   },
+   "podium_total": 2,
+   "win_total": 2,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3270",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1138,
+   "name": "Anze Peharc",
+   "sex": "male",
+   "country": "SLO",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2022,
+   "height": 177,
+   "arm_span": 180,
+   "ifsc_url": "https://ifsc.results.info/athlete/1138",
+   "dr_id": "10825",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10825",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-28"
+  },
+  {
+   "ifsc_id": 11832,
+   "name": "Ao Yurikusa",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2002,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2022,
+   "last_podium_year": 2022,
+   "height": 175,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11832",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 86,
+   "name": "Arsenii Shevchenko",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1990,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2012,
+   "last_podium_year": 2013,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/86",
+   "dr_id": "9700",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9700",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-07-15"
+  },
+  {
+   "ifsc_id": 1707,
+   "name": "Daniel Woods",
+   "sex": "male",
+   "country": "USA",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1707",
+   "dr_id": "6308",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6308",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2017-04-07"
+  },
+  {
+   "ifsc_id": 1489,
+   "name": "Fedir Samoilov",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1,
+    "combined": 1
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2021,
+   "height": null,
+   "arm_span": 186,
+   "ifsc_url": "https://ifsc.results.info/athlete/1489",
+   "dr_id": "10788",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10788",
+   "dr_height": 164,
+   "dr_weight": 52,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2285,
+   "name": "Hiroto Shimizu",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2285",
+   "dr_id": "11392",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11392",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 1372,
+   "name": "Jan Kriz",
+   "sex": "male",
+   "country": "CZE",
+   "birth_year": 1996,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": 190,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1372",
+   "dr_id": "10059",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10059",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 4716,
+   "name": "Klemen Becan",
+   "sex": "male",
+   "country": "SLO",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4716",
+   "dr_id": "2523",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=2523",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2013-11-16"
+  },
+  {
+   "ifsc_id": 1492,
+   "name": "Kostiantyn Pavlenko",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": 1998,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2019,
+   "height": 182,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1492",
+   "dr_id": "11071",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11071",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 3115,
+   "name": "Leander Carmanns",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 2004,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 180,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3115",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3058,
+   "name": "Magnus Midtboe",
+   "sex": "male",
+   "country": "NOR",
+   "birth_year": 1988,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2012,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3058",
+   "dr_id": "5800",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5800",
+   "dr_height": 173,
+   "dr_weight": 66,
+   "dr_last_competition": "2015-08-21"
+  },
+  {
+   "ifsc_id": 688,
+   "name": "Maximillian Milne",
+   "sex": "male",
+   "country": "GBR",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2024,
+   "height": 166,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/688",
+   "dr_id": "13513",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13513",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-09-20"
+  },
+  {
+   "ifsc_id": 14606,
+   "name": "Neo Suzuki",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 163,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/14606",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 3259,
+   "name": "Pandu Asmoro Galar",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 1983,
+   "group": "speed",
+   "podiums": {
+    "speed": 2
+   },
+   "wins": {},
+   "podium_total": 2,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3259",
+   "dr_id": "6808",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6808",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-05-07"
+  },
+  {
+   "ifsc_id": 772,
+   "name": "Patxi Usobiaga Lakunza",
+   "sex": "male",
+   "country": "ESP",
+   "birth_year": 1980,
+   "group": "climbing",
+   "podiums": {
+    "lead": 2
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 2,
+   "win_total": 1,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/772",
+   "dr_id": "2550",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=2550",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2010-11-13"
+  },
+  {
+   "ifsc_id": 861,
+   "name": "Alessandro Santoni",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1996,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2014,
+   "last_podium_year": 2014,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/861",
+   "dr_id": "10004",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10004",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 3983,
+   "name": "Alex Khazanov",
+   "sex": "male",
+   "country": "ISR",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3983",
+   "dr_id": "9537",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9537",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 3362,
+   "name": "Amir Maimuratov",
+   "sex": "male",
+   "country": "KAZ",
+   "birth_year": 1995,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 182,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3362",
+   "dr_id": "9619",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9619",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 4463,
+   "name": "Christian Core",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4463",
+   "dr_id": "122",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=122",
+   "dr_height": 177,
+   "dr_weight": 61,
+   "dr_last_competition": "2014-08-27"
+  },
+  {
+   "ifsc_id": 912,
+   "name": "Filip Schenk",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/912",
+   "dr_id": "12663",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12663",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-22"
+  },
+  {
+   "ifsc_id": 4781,
+   "name": "Francois Kaiser",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4781",
+   "dr_id": "8289",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8289",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2012-05-18"
+  },
+  {
+   "ifsc_id": 849,
+   "name": "Gabriele Moroni",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1987,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/849",
+   "dr_id": "5176",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5176",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-09-06"
+  },
+  {
+   "ifsc_id": 696,
+   "name": "Hamish Mcarthur",
+   "sex": "male",
+   "country": "GBR",
+   "birth_year": 2002,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2021,
+   "height": 181,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/696",
+   "dr_id": "57746",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=57746",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 2041,
+   "name": "Hanwool Kim",
+   "sex": "male",
+   "country": "KOR",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2041",
+   "dr_id": "8503",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8503",
+   "dr_height": 170,
+   "dr_weight": 61,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 2368,
+   "name": "Hidemasa Nishida",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2002,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": 177,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2368",
+   "dr_id": "61368",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=61368",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 1547,
+   "name": "Hryhorii Ilchyshyn",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": 2004,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 182,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1547",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 470,
+   "name": "Jeremy Bonder",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1991,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2014,
+   "last_podium_year": 2014,
+   "height": 168,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/470",
+   "dr_id": "9991",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9991",
+   "dr_height": 169,
+   "dr_weight": 58,
+   "dr_last_competition": "2019-09-05"
+  },
+  {
+   "ifsc_id": 13600,
+   "name": "Jingjie Huang",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13600",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2822,
+   "name": "Jonas Baumann",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1986,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2822",
+   "dr_id": "5206",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=5206",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2015-08-14"
+  },
+  {
+   "ifsc_id": 13703,
+   "name": "Kevin Amon",
+   "sex": "male",
+   "country": "AUT",
+   "birth_year": 2004,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 178,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/13703",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 120,
+   "name": "Lev Rudatskiy",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 1998,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/120",
+   "dr_id": "11326",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11326",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 11409,
+   "name": "Liang Zhang",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2003,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11409",
+   "dr_id": "74925",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=74925",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 11414,
+   "name": "Long Cao",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2022,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/11414",
+   "dr_id": "12942",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12942",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-08-11"
+  },
+  {
+   "ifsc_id": 1212,
+   "name": "Lukas Ennemoser",
+   "sex": "male",
+   "country": "AUT",
+   "birth_year": 1989,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2011,
+   "last_podium_year": 2011,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1212",
+   "dr_id": "6096",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6096",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2016-05-20"
+  },
+  {
+   "ifsc_id": 4746,
+   "name": "Maksym Osipov",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": null,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4746",
+   "dr_id": "6950",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6950",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2011-07-15"
+  },
+  {
+   "ifsc_id": 854,
+   "name": "Marcello Bombardi",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": 171,
+   "arm_span": 182,
+   "ifsc_url": "https://ifsc.results.info/athlete/854",
+   "dr_id": "8317",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8317",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 1027,
+   "name": "Matteo Zurloni",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 2002,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 175,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1027",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 12480,
+   "name": "Max Bertone",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 2007,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 175,
+   "arm_span": 189,
+   "ifsc_url": "https://ifsc.results.info/athlete/12480",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 1221,
+   "name": "Max Rudigier",
+   "sex": "male",
+   "country": "AUT",
+   "birth_year": 1993,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1221",
+   "dr_id": "8315",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8315",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 857,
+   "name": "Michael Piccolruaz",
+   "sex": "male",
+   "country": "ITA",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2016,
+   "last_podium_year": 2016,
+   "height": 178,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/857",
+   "dr_id": "9514",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9514",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 523,
+   "name": "Mickael Mawem",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1990,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {
+    "boulder": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 179,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/523",
+   "dr_id": "12720",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12720",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-09-05"
+  },
+  {
+   "ifsc_id": 2289,
+   "name": "Minoru Nakano",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1984,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2015,
+   "last_podium_year": 2015,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2289",
+   "dr_id": "11718",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11718",
+   "dr_height": 171,
+   "dr_weight": 61,
+   "dr_last_competition": "2018-10-27"
+  },
+  {
+   "ifsc_id": 4776,
+   "name": "Mykhaylo Shalagin",
+   "sex": "male",
+   "country": "UKR",
+   "birth_year": 1982,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4776",
+   "dr_id": "3205",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=3205",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2014-08-21"
+  },
+  {
+   "ifsc_id": 547,
+   "name": "Paul Jenft",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2023,
+   "last_podium_year": 2023,
+   "height": 188,
+   "arm_span": 194,
+   "ifsc_url": "https://ifsc.results.info/athlete/547",
+   "dr_id": "54464",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=54464",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 765,
+   "name": "Philipp Martin",
+   "sex": "male",
+   "country": "GER",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "combined": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2021,
+   "height": 173,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/765",
+   "dr_id": "50798",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=50798",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2024-04-27"
+  },
+  {
+   "ifsc_id": 2385,
+   "name": "Rei Kawamata",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2003,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2022,
+   "height": 172,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2385",
+   "dr_id": "66836",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=66836",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 3274,
+   "name": "Sabri Sabri",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 1995,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2018,
+   "last_podium_year": 2018,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3274",
+   "dr_id": "10734",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10734",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 13301,
+   "name": "Samuel Richard",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 2007,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 168,
+   "arm_span": 179,
+   "ifsc_url": "https://ifsc.results.info/athlete/13301",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 198,
+   "name": "Sergei Rukin",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": 2000,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/198",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 14963,
+   "name": "Shouhong Chu",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": 2007,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {
+    "speed": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2025,
+   "last_podium_year": 2025,
+   "height": 172,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/14963",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  },
+  {
+   "ifsc_id": 2336,
+   "name": "Shuta Tanaka",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2000,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2019,
+   "last_podium_year": 2019,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2336",
+   "dr_id": "14478",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=14478",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-14"
+  },
+  {
+   "ifsc_id": 3276,
+   "name": "Sufriyanto Rindi",
+   "sex": "male",
+   "country": "INA",
+   "birth_year": 1991,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/3276",
+   "dr_id": "10993",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=10993",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2018-05-12"
+  },
+  {
+   "ifsc_id": 2337,
+   "name": "Taisei Ishimatsu",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1996,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2337",
+   "dr_id": "57094",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=57094",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-11-06"
+  },
+  {
+   "ifsc_id": 463,
+   "name": "Thomas Joannes",
+   "sex": "male",
+   "country": "FRA",
+   "birth_year": 1994,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2016,
+   "last_podium_year": 2016,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/463",
+   "dr_id": "9758",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=9758",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-04"
+  },
+  {
+   "ifsc_id": 1278,
+   "name": "Tobias Plangger",
+   "sex": "male",
+   "country": "AUT",
+   "birth_year": 2001,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2022,
+   "last_podium_year": 2022,
+   "height": 182,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/1278",
+   "dr_id": "13222",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=13222",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-18"
+  },
+  {
+   "ifsc_id": 2291,
+   "name": "Tomoaki Takata",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1995,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2021,
+   "last_podium_year": 2021,
+   "height": 175,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2291",
+   "dr_id": "11739",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=11739",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-07-19"
+  },
+  {
+   "ifsc_id": 4866,
+   "name": "Victor Kozlov",
+   "sex": "male",
+   "country": "RUS",
+   "birth_year": null,
+   "group": "climbing",
+   "podiums": {
+    "boulder": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4866",
+   "dr_id": "6729",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=6729",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2012-09-12"
+  },
+  {
+   "ifsc_id": 4990,
+   "name": "Yuhang Zhang",
+   "sex": "male",
+   "country": "CHN",
+   "birth_year": null,
+   "group": "speed",
+   "podiums": {
+    "speed": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2010,
+   "last_podium_year": 2010,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/4990",
+   "dr_id": "8786",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=8786",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2013-10-19"
+  },
+  {
+   "ifsc_id": 2301,
+   "name": "Yuki Hada",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 1997,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {},
+   "podium_total": 1,
+   "win_total": 0,
+   "first_podium_year": 2017,
+   "last_podium_year": 2017,
+   "height": null,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/2301",
+   "dr_id": "12326",
+   "dr_url": "https://www.digitalrock.de/egroupware/ranking/sitemgr/digitalrock/pstambl.html#person=12326",
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": "2019-10-26"
+  },
+  {
+   "ifsc_id": 12879,
+   "name": "Zento Murashita",
+   "sex": "male",
+   "country": "JPN",
+   "birth_year": 2004,
+   "group": "climbing",
+   "podiums": {
+    "lead": 1
+   },
+   "wins": {
+    "lead": 1
+   },
+   "podium_total": 1,
+   "win_total": 1,
+   "first_podium_year": 2024,
+   "last_podium_year": 2024,
+   "height": 170,
+   "arm_span": null,
+   "ifsc_url": "https://ifsc.results.info/athlete/12879",
+   "dr_id": null,
+   "dr_url": null,
+   "dr_height": null,
+   "dr_weight": null,
+   "dr_last_competition": null
+  }
+ ]
+}

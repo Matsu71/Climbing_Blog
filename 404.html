@@ -1,13 +1,68 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <title>CRUX</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ページが見つかりません | CRUX</title>
+<meta name="description" content="お探しのページは見つかりませんでした。">
+<link rel="canonical" href="https://matsu71.github.io/Climbing_Blog/404.html">
+<meta name="robots" content="noindex,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CRUX">
+<meta property="og:title" content="ページが見つかりません">
+<meta property="og:description" content="お探しのページは見つかりませんでした。">
+<meta property="og:url" content="https://matsu71.github.io/Climbing_Blog/404.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#195746" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121615" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/Climbing_Blog/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/Climbing_Blog/assets/site.css">
+<script src="/Climbing_Blog/assets/site.js" defer></script>
 </head>
 <body>
-  <noscript>このサイトの表示にはJavaScriptが必要です。</noscript>
-  <script type="module" src="/Climbing_Blog/bootstrap.mjs"></script>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="/Climbing_Blog/"><span class="brand-word">CRUX<span class="brand-dot">.</span></span><span class="brand-sub">クライミングの記事とデータ</span></a>
+<nav class="site-nav" aria-label="メインメニュー"><a href="/Climbing_Blog/articles/">記事</a><a href="/Climbing_Blog/data/">データ</a><a href="/Climbing_Blog/glossary/">用語集</a><a href="/Climbing_Blog/about/">このサイトについて</a></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap-narrow">
+<header class="page-head"><h1>ページが見つかりません</h1><p>URLが変わったか、ページが削除された可能性があります。</p></header>
+<p data-redirect-note hidden>新しいページへ移動しています…</p>
+<ul><li><a href="/Climbing_Blog/">トップページ</a></li><li><a href="/Climbing_Blog/articles/">記事一覧</a></li><li><a href="/Climbing_Blog/data/">データ</a></li></ul>
+</div>
+<script>
+(function () {
+  var base = "/Climbing_Blog/";
+  var map = {"read":"articles/","read/body-not-destiny":"articles/climber-height-weight/","read/ideal-climber-body-type":"articles/climber-height-weight/","articles/male-top-climbers-body-size.md":"articles/climber-height-weight/","athlete-data":"data/athletes/","athletes":"data/athletes/","ascent-data":"data/ascents/","climbs":"data/ascents/","injury-data":"data/injuries/","evidence":"data/sources/","research":"articles/#training","gyms":"data/gyms/","gym-history":"data/gyms/","quality":"about/","privacy":"about/","notebook":"","tools":"","quiz":"","search":"","saved":""};
+  var path = location.pathname.indexOf(base) === 0 ? location.pathname.slice(base.length) : '';
+  path = path.replace(/^\/+|\/+$/g, '');
+  var target = null;
+  if (Object.prototype.hasOwnProperty.call(map, path)) target = map[path];
+  else {
+    var parts = path.split('/');
+    if (parts[0] === 'read' && parts[1]) target = map['read/' + parts[1]] || 'articles/' + parts[1] + '/';
+    else if (Object.prototype.hasOwnProperty.call(map, parts[0])) target = map[parts[0]];
+  }
+  if (target !== null && target !== undefined) {
+    var note = document.querySelector('[data-redirect-note]');
+    if (note) note.hidden = false;
+    location.replace(base + target + location.hash);
+  }
+})();
+</script>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<div>
+<p class="footer-brand">CRUX<span class="brand-dot">.</span></p>
+<p>クライミングの体格・トレーニング・怪我・記録を、出典つきのデータと研究から解説するブログです。</p>
+</div>
+<nav aria-label="フッターメニュー"><a href="/Climbing_Blog/articles/">記事</a><a href="/Climbing_Blog/data/">データ</a><a href="/Climbing_Blog/glossary/">用語集</a><a href="/Climbing_Blog/about/">このサイトについて</a><a href="/Climbing_Blog/data/sources/">出典一覧</a></nav>
+</div>
+<p class="wrap footer-note">怪我や体重に関する内容は一般的な情報です。個別の診断・治療・減量の指示ではありません。</p>
+</footer>
 </body>
 </html>

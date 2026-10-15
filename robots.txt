@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://matsu71.github.io/Climbing_Blog/sitemap.xml

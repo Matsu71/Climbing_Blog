@@ -1,0 +1,1311 @@
+{
+ "checked_at": "2026-09-11",
+ "note": "施設の公式情報から確認した項目だけを掲載しています。営業時間・料金は訪問前に公式で確認してください。",
+ "gyms": [
+  {
+   "brand": "PUMP",
+   "status": "listed",
+   "summary": "公式情報を起点に、種目とアクセスを確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "ogikubo",
+   "name": "B-PUMP OGIKUBO",
+   "prefecture": "東京都",
+   "municipality": "杉並区",
+   "address": "東京都杉並区上荻1-10-12 荻窪東亜会館3F",
+   "access": "荻窪駅",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-ogikubo"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-ogikubo"
+    ],
+    "prefecture": [
+     "gym-ogikubo"
+    ],
+    "municipality": [
+     "gym-ogikubo"
+    ],
+    "address": [
+     "gym-ogikubo"
+    ],
+    "access": [
+     "gym-ogikubo"
+    ],
+    "disciplines": [
+     "gym-ogikubo"
+    ],
+    "status": [
+     "gym-ogikubo"
+    ]
+   }
+  },
+  {
+   "brand": "PUMP",
+   "status": "listed",
+   "summary": "公式情報を起点に、種目とアクセスを確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "akiba",
+   "name": "B-PUMP TOKYO",
+   "prefecture": "東京都",
+   "municipality": "文京区",
+   "address": "東京都文京区湯島1-1-8",
+   "access": "秋葉原駅・御茶ノ水駅",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-akiba"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-akiba"
+    ],
+    "prefecture": [
+     "gym-akiba"
+    ],
+    "municipality": [
+     "gym-akiba"
+    ],
+    "address": [
+     "gym-akiba"
+    ],
+    "access": [
+     "gym-akiba"
+    ],
+    "disciplines": [
+     "gym-akiba"
+    ],
+    "status": [
+     "gym-akiba"
+    ]
+   }
+  },
+  {
+   "brand": "PUMP",
+   "status": "listed",
+   "summary": "公式情報を起点に、種目とアクセスを確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "yokohama",
+   "name": "B-PUMP YOKOHAMA",
+   "prefecture": "神奈川県",
+   "municipality": "横浜市",
+   "address": "神奈川県横浜市西区平沼1-8-1",
+   "access": "横浜駅・戸部駅",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-yokohama"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-yokohama"
+    ],
+    "prefecture": [
+     "gym-yokohama"
+    ],
+    "municipality": [
+     "gym-yokohama"
+    ],
+    "address": [
+     "gym-yokohama"
+    ],
+    "access": [
+     "gym-yokohama"
+    ],
+    "disciplines": [
+     "gym-yokohama"
+    ],
+    "status": [
+     "gym-yokohama"
+    ]
+   }
+  },
+  {
+   "brand": "PUMP",
+   "status": "listed",
+   "summary": "公式情報を起点に、種目とアクセスを確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "kawaguchi",
+   "name": "PUMP1 KAWAGUCHI",
+   "prefecture": "埼玉県",
+   "municipality": "川口市",
+   "address": "埼玉県川口市元郷2-3-12",
+   "access": "赤羽駅からバス案内あり",
+   "disciplines": [
+    "ボルダー",
+    "リード"
+   ],
+   "sources": [
+    "gym-kawaguchi"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-kawaguchi"
+    ],
+    "prefecture": [
+     "gym-kawaguchi"
+    ],
+    "municipality": [
+     "gym-kawaguchi"
+    ],
+    "address": [
+     "gym-kawaguchi"
+    ],
+    "access": [
+     "gym-kawaguchi"
+    ],
+    "disciplines": [
+     "gym-kawaguchi"
+    ],
+    "status": [
+     "gym-kawaguchi"
+    ]
+   }
+  },
+  {
+   "brand": "PUMP",
+   "status": "listed",
+   "summary": "公式情報を起点に、種目とアクセスを確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "kawasaki",
+   "name": "PUMP2 KAWASAKI",
+   "prefecture": "神奈川県",
+   "municipality": "川崎市",
+   "address": "神奈川県川崎市多摩区中野島2-9-30",
+   "access": "中野島駅",
+   "disciplines": [
+    "ボルダー",
+    "リード"
+   ],
+   "sources": [
+    "gym-kawasaki"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-kawasaki"
+    ],
+    "prefecture": [
+     "gym-kawasaki"
+    ],
+    "municipality": [
+     "gym-kawasaki"
+    ],
+    "address": [
+     "gym-kawasaki"
+    ],
+    "access": [
+     "gym-kawasaki"
+    ],
+    "disciplines": [
+     "gym-kawasaki"
+    ],
+    "status": [
+     "gym-kawasaki"
+    ]
+   }
+  },
+  {
+   "brand": "ROCKLANDS",
+   "status": "listed",
+   "summary": "ボルダーとリードを同じ施設で。オートビレイの利用条件は公式へ。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": "登攀距離10〜13m。壁の垂直高とは区別しています。",
+   "auto_belay": true,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "rocklands",
+   "name": "ROCKLANDS",
+   "prefecture": "東京都",
+   "municipality": "江戸川区",
+   "address": "東京都江戸川区東葛西5-27-16",
+   "access": "公式の所在地案内を確認",
+   "disciplines": [
+    "ボルダー",
+    "リード"
+   ],
+   "sources": [
+    "gym-rocklands"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-rocklands"
+    ],
+    "prefecture": [
+     "gym-rocklands"
+    ],
+    "municipality": [
+     "gym-rocklands"
+    ],
+    "address": [
+     "gym-rocklands"
+    ],
+    "access": [
+     "gym-rocklands"
+    ],
+    "disciplines": [
+     "gym-rocklands"
+    ],
+    "status": [
+     "gym-rocklands"
+    ],
+    "route_length_note": [
+     "gym-rocklands"
+    ],
+    "auto_belay": [
+     "gym-rocklands"
+    ]
+   }
+  },
+  {
+   "brand": "Base Camp",
+   "status": "listed",
+   "summary": "ボルダー4.2m・ロープ壁9.2mを公式の体験案内で確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": 4.2,
+   "rope_height_m": 9.2,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": true,
+   "rating": null,
+   "id": "basecamp-iruma",
+   "name": "Climb Park Base Camp 入間",
+   "prefecture": "埼玉県",
+   "municipality": "入間市",
+   "address": "埼玉県入間市東町7-1-7",
+   "access": "武蔵藤沢駅から徒歩13分",
+   "disciplines": [
+    "ボルダー",
+    "トップロープ"
+   ],
+   "sources": [
+    "gym-base-access",
+    "gym-base-walls",
+    "gym-base-facilities"
+   ],
+   "field_sources": {
+    "boulder_height_m": [
+     "gym-base-walls"
+    ],
+    "rope_height_m": [
+     "gym-base-walls"
+    ],
+    "disciplines": [
+     "gym-base-walls"
+    ]
+   }
+  },
+  {
+   "brand": "Share",
+   "status": "listed",
+   "summary": "鶴見区のボルダリング施設。セット予定・利用条件は公式のお知らせへ。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "share",
+   "name": "Bouldering Gym Share",
+   "prefecture": "神奈川県",
+   "municipality": "横浜市",
+   "address": "神奈川県横浜市鶴見区市場東中町12-2 アルプス5号館1階",
+   "access": "公式の所在地案内を確認",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-share"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-share"
+    ],
+    "prefecture": [
+     "gym-share"
+    ],
+    "municipality": [
+     "gym-share"
+    ],
+    "address": [
+     "gym-share"
+    ],
+    "access": [
+     "gym-share"
+    ],
+    "disciplines": [
+     "gym-share"
+    ],
+    "status": [
+     "gym-share"
+    ]
+   }
+  },
+  {
+   "brand": "Fish and Bird / Rhino and Bird",
+   "status": "listed",
+   "summary": "東陽町のボルダー専用施設。複数階のウォールを公式案内で紹介。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "fish-and-bird",
+   "name": "Fish and Bird",
+   "prefecture": "東京都",
+   "municipality": "江東区",
+   "address": "東京都江東区東陽7-4-12",
+   "access": "東陽町駅から徒歩10分",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-fish",
+    "gym-fish-address"
+   ],
+   "field_sources": {
+    "address": [
+     "gym-fish-address"
+    ],
+    "access": [
+     "gym-fish-address"
+    ]
+   }
+  },
+  {
+   "brand": "NOBOROCK",
+   "status": "listed",
+   "summary": "ボルダーの店舗情報。セット替え・料金・利用年齢は公式案内を確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "noborock-shibuya",
+   "name": "NOBOROCK 渋谷",
+   "prefecture": "東京都",
+   "municipality": "渋谷区",
+   "address": "東京都渋谷区桜丘町9-1 ビアンクォードビルB1",
+   "access": "渋谷駅南改札から徒歩5分",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-nobo-shibuya"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-nobo-shibuya"
+    ],
+    "prefecture": [
+     "gym-nobo-shibuya"
+    ],
+    "municipality": [
+     "gym-nobo-shibuya"
+    ],
+    "address": [
+     "gym-nobo-shibuya"
+    ],
+    "access": [
+     "gym-nobo-shibuya"
+    ],
+    "disciplines": [
+     "gym-nobo-shibuya"
+    ],
+    "status": [
+     "gym-nobo-shibuya"
+    ]
+   }
+  },
+  {
+   "brand": "NOBOROCK",
+   "status": "listed",
+   "summary": "ボルダーの店舗情報。セット替え・料金・利用年齢は公式案内を確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "noborock-ikebukuro",
+   "name": "NOBOROCK 池袋",
+   "prefecture": "東京都",
+   "municipality": "豊島区",
+   "address": "東京都豊島区西池袋5-13-12 MKビルB1",
+   "access": "池袋駅C2出口・要町駅6番出口から徒歩3分",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-nobo-ikebukuro"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-nobo-ikebukuro"
+    ],
+    "prefecture": [
+     "gym-nobo-ikebukuro"
+    ],
+    "municipality": [
+     "gym-nobo-ikebukuro"
+    ],
+    "address": [
+     "gym-nobo-ikebukuro"
+    ],
+    "access": [
+     "gym-nobo-ikebukuro"
+    ],
+    "disciplines": [
+     "gym-nobo-ikebukuro"
+    ],
+    "status": [
+     "gym-nobo-ikebukuro"
+    ]
+   }
+  },
+  {
+   "brand": "NOBOROCK",
+   "status": "listed",
+   "summary": "ボルダーの店舗情報。セット替え・料金・利用年齢は公式案内を確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "noborock-machida",
+   "name": "NOBOROCK 町田",
+   "prefecture": "東京都",
+   "municipality": "町田市",
+   "address": "東京都町田市原町田6-13-21 町田アミックスビル3F",
+   "access": "小田急町田駅東口からの案内あり",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-nobo-machida"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-nobo-machida"
+    ],
+    "prefecture": [
+     "gym-nobo-machida"
+    ],
+    "municipality": [
+     "gym-nobo-machida"
+    ],
+    "address": [
+     "gym-nobo-machida"
+    ],
+    "access": [
+     "gym-nobo-machida"
+    ],
+    "disciplines": [
+     "gym-nobo-machida"
+    ],
+    "status": [
+     "gym-nobo-machida"
+    ]
+   }
+  },
+  {
+   "brand": "NOBOROCK",
+   "status": "listed",
+   "summary": "ボルダーの店舗情報。セット替え・料金・利用年齢は公式案内を確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "noborock-shinjuku",
+   "name": "NOBOROCK 新宿",
+   "prefecture": "東京都",
+   "municipality": "新宿区",
+   "address": "東京都新宿区西新宿7-5-20 新宿旭ビル1F",
+   "access": "公式の所在地案内を確認",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-nobo-shinjuku"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-nobo-shinjuku"
+    ],
+    "prefecture": [
+     "gym-nobo-shinjuku"
+    ],
+    "municipality": [
+     "gym-nobo-shinjuku"
+    ],
+    "address": [
+     "gym-nobo-shinjuku"
+    ],
+    "access": [
+     "gym-nobo-shinjuku"
+    ],
+    "disciplines": [
+     "gym-nobo-shinjuku"
+    ],
+    "status": [
+     "gym-nobo-shinjuku"
+    ]
+   }
+  },
+  {
+   "brand": "NOBOROCK",
+   "status": "listed",
+   "summary": "ボルダーの店舗情報。セット替え・料金・利用年齢は公式案内を確認。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "noborock-asakusa",
+   "name": "NOBOROCK 浅草",
+   "prefecture": "東京都",
+   "municipality": "墨田区",
+   "address": "東京都墨田区吾妻橋1-23-30 パトリア吾妻橋102号",
+   "access": "浅草駅から徒歩4分・本所吾妻橋駅から徒歩5分",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-nobo-asakusa"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-nobo-asakusa"
+    ],
+    "prefecture": [
+     "gym-nobo-asakusa"
+    ],
+    "municipality": [
+     "gym-nobo-asakusa"
+    ],
+    "address": [
+     "gym-nobo-asakusa"
+    ],
+    "access": [
+     "gym-nobo-asakusa"
+    ],
+    "disciplines": [
+     "gym-nobo-asakusa"
+    ],
+    "status": [
+     "gym-nobo-asakusa"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "listed",
+   "summary": "亀岡駅前のスタジアム内。公式の営業カレンダーへつながります。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-kyoto",
+   "name": "グラビティリサーチ サンガスタジアム by KYOCERA",
+   "prefecture": "京都府",
+   "municipality": "亀岡市",
+   "address": "京都府亀岡市亀岡駅北1-8-2",
+   "access": "亀岡駅から徒歩3分",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-gravity-kyoto",
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-gravity-kyoto"
+    ],
+    "prefecture": [
+     "gym-gravity-kyoto"
+    ],
+    "municipality": [
+     "gym-gravity-kyoto"
+    ],
+    "address": [
+     "gym-gravity-kyoto"
+    ],
+    "access": [
+     "gym-gravity-kyoto"
+    ],
+    "disciplines": [
+     "gym-gravity-kyoto"
+    ],
+    "status": [
+     "gym-gravity-kyoto"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "listed",
+   "summary": "公式紹介のボルダー壁高は4.5m。床面積と壁面積は混同しません。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": 4.5,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-umeda",
+   "name": "グラビティリサーチ 梅田",
+   "prefecture": "大阪府",
+   "municipality": "大阪市",
+   "address": "大阪府大阪市北区大深町3-1 グランフロント大阪 ナレッジキャピタル北館6F",
+   "access": "公式のアクセス案内を確認",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-gravity-umeda",
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "boulder_height_m": [
+     "gym-gravity-list"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "listed",
+   "summary": "屋上施設。悪天候による臨時休業の確認を優先してください。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-mintkobe",
+   "name": "グラビティリサーチ ミント神戸",
+   "prefecture": "兵庫県",
+   "municipality": "神戸市",
+   "address": "兵庫県神戸市中央区雲井通7-1-1 M-INT神戸18F",
+   "access": "三宮駅前・ミント神戸18F",
+   "disciplines": [
+    "ボルダー"
+   ],
+   "sources": [
+    "gym-gravity-mintkobe",
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "name": [
+     "gym-gravity-mintkobe"
+    ],
+    "prefecture": [
+     "gym-gravity-mintkobe"
+    ],
+    "municipality": [
+     "gym-gravity-mintkobe"
+    ],
+    "address": [
+     "gym-gravity-mintkobe"
+    ],
+    "access": [
+     "gym-gravity-mintkobe"
+    ],
+    "disciplines": [
+     "gym-gravity-mintkobe"
+    ],
+    "status": [
+     "gym-gravity-mintkobe"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "listed",
+   "summary": "ボルダーとリードを併設。公式案内はボルダー4.3m・リード12.5m。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": null,
+   "closed_date_precision": "unknown",
+   "boulder_height_m": 4.3,
+   "rope_height_m": 12.5,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-himeji",
+   "name": "グラビティリサーチ 姫路",
+   "prefecture": "兵庫県",
+   "municipality": "姫路市",
+   "address": "兵庫県姫路市駅前町27 テラッソ姫路3F",
+   "access": "姫路駅前・テラッソ姫路3F",
+   "disciplines": [
+    "ボルダー",
+    "リード"
+   ],
+   "sources": [
+    "gym-gravity-himeji",
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "boulder_height_m": [
+     "gym-gravity-list"
+    ],
+    "rope_height_m": [
+     "gym-gravity-list"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "closed",
+   "summary": "公式店舗一覧で閉店日を確認。以前の所在地を履歴として保存しています。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": "2025-04-14",
+   "closed_date_precision": "day",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-sapporo",
+   "name": "グラビティリサーチ 札幌",
+   "prefecture": "北海道",
+   "municipality": "札幌市",
+   "address": "北海道札幌市中央区北2条東4丁目 サッポロファクトリー1条館1F",
+   "access": "閉店施設の履歴。訪問先として案内していません。",
+   "disciplines": [],
+   "sources": [
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "closed_date": [
+     "gym-gravity-list"
+    ],
+    "status": [
+     "gym-gravity-list"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "closed",
+   "summary": "公式店舗一覧で閉店日を確認。以前の所在地を履歴として保存しています。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": "2024-02-25",
+   "closed_date_precision": "day",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-niigata",
+   "name": "グラビティリサーチ 新潟",
+   "prefecture": "新潟県",
+   "municipality": "新潟市",
+   "address": "新潟県新潟市江南区五月町2-7-22",
+   "access": "閉店施設の履歴。訪問先として案内していません。",
+   "disciplines": [],
+   "sources": [
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "closed_date": [
+     "gym-gravity-list"
+    ],
+    "status": [
+     "gym-gravity-list"
+    ]
+   }
+  },
+  {
+   "brand": "GRAVITY RESEARCH",
+   "status": "closed",
+   "summary": "公式店舗一覧で閉店日を確認。以前の所在地を履歴として保存しています。",
+   "checked_at": "2026-09-11",
+   "price_yen": null,
+   "wall_area_m2": null,
+   "floor_area_m2": null,
+   "opened_date": null,
+   "opened_date_precision": "unknown",
+   "closed_date": "2026-01-12",
+   "closed_date_precision": "day",
+   "boulder_height_m": null,
+   "rope_height_m": null,
+   "route_length_note": null,
+   "auto_belay": null,
+   "moonboard": null,
+   "kilterboard": null,
+   "campus_board": null,
+   "rating": null,
+   "id": "gravity-kishiwada",
+   "name": "グラビティリサーチ 岸和田",
+   "prefecture": "大阪府",
+   "municipality": "岸和田市",
+   "address": "大阪府岸和田市港緑町3-1 岸和田カンカンベイサイドモールWEST 1F",
+   "access": "閉店施設の履歴。訪問先として案内していません。",
+   "disciplines": [],
+   "sources": [
+    "gym-gravity-list"
+   ],
+   "field_sources": {
+    "closed_date": [
+     "gym-gravity-list"
+    ],
+    "status": [
+     "gym-gravity-list"
+    ]
+   }
+  }
+ ],
+ "sources": [
+  {
+   "id": "gym-ogikubo",
+   "title": "B-PUMP OGIKUBO 公式施設案内",
+   "url": "https://pump-climbing.com/gym/bpump/",
+   "publisher": "PUMP",
+   "kind": "施設公式",
+   "access": "住所・種目を確認。営業変更は公式へ",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-akiba",
+   "title": "B-PUMP TOKYO 公式施設案内",
+   "url": "https://pump-climbing.com/gym/akiba/",
+   "publisher": "PUMP",
+   "kind": "施設公式",
+   "access": "住所・種目を確認。営業変更は公式へ",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-yokohama",
+   "title": "B-PUMP YOKOHAMA 公式施設案内",
+   "url": "https://pump-climbing.com/gym/bpump2/",
+   "publisher": "PUMP",
+   "kind": "施設公式",
+   "access": "住所・種目を確認。営業変更は公式へ",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-kawaguchi",
+   "title": "PUMP1 KAWAGUCHI 公式施設案内",
+   "url": "https://pump-climbing.com/gym/pump1/",
+   "publisher": "PUMP",
+   "kind": "施設公式",
+   "access": "住所・種目を確認。営業変更は公式へ",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-kawasaki",
+   "title": "PUMP2 KAWASAKI 公式施設案内",
+   "url": "https://pump-climbing.com/gym/pump2/",
+   "publisher": "PUMP",
+   "kind": "施設公式",
+   "access": "住所・種目を確認。営業変更は公式へ",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-rocklands",
+   "title": "ROCKLANDS 施設・所在地",
+   "url": "https://www.rocklands.tokyo/gyminfo",
+   "publisher": "ROCKLANDS",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-base-access",
+   "title": "Base Camp 入間 アクセス",
+   "url": "https://b-camp.jp/iruma/access/",
+   "publisher": "Base Camp",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-base-walls",
+   "title": "Base Camp 入間 体験・壁高",
+   "url": "https://b-camp.jp/iruma/trial/",
+   "publisher": "Base Camp",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-base-facilities",
+   "title": "Base Camp 入間 施設紹介",
+   "url": "https://b-camp.jp/iruma/facilities/",
+   "publisher": "Base Camp",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-share",
+   "title": "Bouldering Gym Share 施設・所在地",
+   "url": "https://www.boulderinggymshare.com/",
+   "publisher": "Bouldering Gym Share",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-fish",
+   "title": "Fish and Bird 施設紹介",
+   "url": "https://fish-bird.co.jp/fishandbird/",
+   "publisher": "Fish and Bird",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-fish-address",
+   "title": "運営グループによるFish and Birdの店舗情報",
+   "url": "https://group.orientalbio.jp/",
+   "publisher": "オリエンタルバイオグループ",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-nobo-shibuya",
+   "title": "NOBOROCK 渋谷 店舗情報",
+   "url": "https://noborock-climbing.pro/program/shibuya/",
+   "publisher": "NOBOROCK",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-nobo-ikebukuro",
+   "title": "NOBOROCK 池袋 店舗情報",
+   "url": "https://noborock-climbing.pro/program/ikebukuro/",
+   "publisher": "NOBOROCK",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-nobo-machida",
+   "title": "NOBOROCK 町田 店舗情報",
+   "url": "https://noborock-climbing.pro/program/machida/",
+   "publisher": "NOBOROCK",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-nobo-shinjuku",
+   "title": "NOBOROCK 新宿 店舗情報",
+   "url": "https://noborock-climbing.pro/program/%E6%96%B0%E5%AE%BF%E5%BA%97/",
+   "publisher": "NOBOROCK",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-nobo-asakusa",
+   "title": "NOBOROCK 浅草 店舗情報",
+   "url": "https://noborock-climbing.pro/program/%E6%B5%85%E8%8D%89%E5%BA%97/",
+   "publisher": "NOBOROCK",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-gravity-kyoto",
+   "title": "グラビティリサーチ サンガスタジアム 施設情報",
+   "url": "https://www.gravity-research.jp/shop/kyoto/",
+   "publisher": "好日山荘 / GRAVITY RESEARCH",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-gravity-list",
+   "title": "グラビティリサーチ 店舗一覧・閉店履歴",
+   "url": "https://www.gravity-research.jp/shop/",
+   "publisher": "好日山荘 / GRAVITY RESEARCH",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-gravity-umeda",
+   "title": "グラビティリサーチ 梅田 施設情報",
+   "url": "https://www.gravity-research.jp/shop/umeda/",
+   "publisher": "好日山荘 / GRAVITY RESEARCH",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-gravity-mintkobe",
+   "title": "グラビティリサーチ ミント神戸 施設情報",
+   "url": "https://www.gravity-research.jp/shop/mintkobe/",
+   "publisher": "好日山荘 / GRAVITY RESEARCH",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  },
+  {
+   "id": "gym-gravity-himeji",
+   "title": "グラビティリサーチ 姫路 施設情報",
+   "url": "https://www.gravity-research.jp/shop/himeji/",
+   "publisher": "好日山荘 / GRAVITY RESEARCH",
+   "kind": "施設公式",
+   "access": "公開本文の該当項目を確認。営業日・料金は訪問前に再確認",
+   "published": null,
+   "checked_at": "2026-09-11"
+  }
+ ]
+}

@@ -1,5 +1,4 @@
-dist/
 node_modules/
-artifacts/
-__pycache__/
+.cache/
+dist/
 .DS_Store
